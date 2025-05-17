@@ -46,6 +46,9 @@ yarn-error.log*
 *.xlsx
 *.xlsm
 
+# Python 백엔드 업로드 파일 제외
+python-backend/uploads/
+
 # 기타
 *.swp
 *.swo
