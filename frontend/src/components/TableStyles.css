@@ -1,0 +1,28 @@
+/* Table container 크기 조정 */
+.table-section {
+    max-width: 700px;
+    width: 100%;
+    margin-right: 24px;
+  }
+  
+  /* 기존 테이블 스타일 유지 */
+  .aba-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    border: 1px solid #ccc;
+    font-size: 14px;
+  }
+  
+  .aba-table th,
+  .aba-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .aba-table th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+  }
+  

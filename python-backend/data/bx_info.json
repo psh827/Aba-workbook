@@ -1,0 +1,98 @@
+{
+    "basic_info": {
+        "name": { "row": 0, "col": "Unnamed: 4" },
+        "home_period": { "row": 0, "col": "Unnamed: 30" },
+        "leader_name": { "row": 1, "col": "Unnamed: 4" }
+    },
+    "treatment_information": {
+        "range": [4, 8],
+        "columns": {
+            "home_sessions": {"row": 4, "action": "Unnamed: 1", "count":"Unnamed: 8", "th1": "Unnamed: 11", "th1_cnt": "Unnamed: 17", "th2": "Unnamed: 18", "th2_cnt": "Unnamed: 24"},
+            "training_sessions": {"row": 5, "action": "Unnamed: 1", "count":"Unnamed: 8", "th1": "Unnamed: 11", "th1_cnt": "Unnamed: 17", "th2": "Unnamed: 18", "th2_cnt": "Unnamed: 24"},
+            "school_sessions": {"row": 6, "action": "Unnamed: 1", "count":"Unnamed: 8", "th1": "Unnamed: 11", "th1_cnt": "Unnamed: 17", "th2": "Unnamed: 18", "th2_cnt": "Unnamed: 24"},
+            "school_training_sessions": {"row": 7, "action": "Unnamed: 1", "count":"Unnamed: 8", "th1": "Unnamed: 11", "th1_cnt": "Unnamed: 17", "th2": "Unnamed: 18", "th2_cnt": "Unnamed: 24"},
+            "community_trips": {"row": 8, "action": "Unnamed: 1", "count":"Unnamed: 8", "th1": "Unnamed: 11", "th1_cnt": "Unnamed: 17", "th2": "Unnamed: 18", "th2_cnt": "Unnamed: 24"}
+        }
+    },
+    "tracking_data": {
+        "range": [10, 16],
+        "columns": {
+            "non-responses": {"row": 10, "behavior": "non-responses", "behavior_trials": "Unnamed: 7", "trials_in_session": "Unnamed: 9", "calculate": "Unnamed: 11", "data_type": "Unnamed: 13", "result_past_week": "Unnamed: 14"},
+            "behavior1": {"row": 11, "behavior": "Unnamed: 2", "behavior_trials": "Unnamed: 7", "trials_in_session": "Unnamed: 9", "calculate": "Unnamed: 11", "data_type": "Unnamed: 13", "result_past_week": "Unnamed: 14"},
+            "behavior2": {"row": 12, "behavior": "Unnamed: 2", "behavior_trials": "Unnamed: 7", "trials_in_session": "Unnamed: 9", "calculate": "Unnamed: 11", "data_type": "Unnamed: 13", "result_past_week": "Unnamed: 14"},
+            "behavior3": {"row": 13, "behavior": "Unnamed: 2", "behavior_trials": "Unnamed: 7", "trials_in_session": "Unnamed: 9", "calculate": "Unnamed: 11", "data_type": "Unnamed: 13", "result_past_week": "Unnamed: 14"},
+            "behavior4": {"row": 14, "behavior": "Unnamed: 2", "behavior_trials": "Unnamed: 7", "trials_in_session": "Unnamed: 9", "calculate": "Unnamed: 11", "data_type": "Unnamed: 13", "result_past_week": "Unnamed: 14"},
+            "behavior5": {"row": 15, "behavior": "Unnamed: 2", "behavior_trials": "Unnamed: 7", "trials_in_session": "Unnamed: 9", "calculate": "Unnamed: 11", "data_type": "Unnamed: 13", "result_past_week": "Unnamed: 14"},
+            "behavior6": {"row": 16, "behavior": "Unnamed: 2", "behavior_trials": "Unnamed: 7", "trials_in_session": "Unnamed: 9", "calculate": "Unnamed: 11", "data_type": "Unnamed: 13", "result_past_week": "Unnamed: 14"},
+            "behavior7": {"row": 10, "behavior": "Unnamed: 29", "behavior_trials": "Unnamed: 34", "trials_in_session": "Unnamed: 36", "calculate": "Unnamed: 38", "data_type": "Unnamed: 40", "result_past_week": "Unnamed: 41"},
+            "behavior8": {"row": 11, "behavior": "Unnamed: 29", "behavior_trials": "Unnamed: 34", "trials_in_session": "Unnamed: 36", "calculate": "Unnamed: 38", "data_type": "Unnamed: 40", "result_past_week": "Unnamed: 41"},
+            "behavior9": {"row": 12, "behavior": "Unnamed: 29", "behavior_trials": "Unnamed: 34", "trials_in_session": "Unnamed: 36", "calculate": "Unnamed: 38", "data_type": "Unnamed: 40", "result_past_week": "Unnamed: 41"},
+            "behavior10": {"row": 13, "behavior": "Unnamed: 29", "behavior_trials": "Unnamed: 34", "trials_in_session": "Unnamed: 36", "calculate": "Unnamed: 38", "data_type": "Unnamed: 40", "result_past_week": "Unnamed: 41"},
+            "behavior11": {"row": 14, "behavior": "Unnamed: 29", "behavior_trials": "Unnamed: 34", "trials_in_session": "Unnamed: 36", "calculate": "Unnamed: 38", "data_type": "Unnamed: 40", "result_past_week": "Unnamed: 41"},
+            "behavior12": {"row": 15, "behavior": "Unnamed: 29", "behavior_trials": "Unnamed: 34", "trials_in_session": "Unnamed: 36", "calculate": "Unnamed: 38", "data_type": "Unnamed: 40", "result_past_week": "Unnamed: 41"},
+            "behavior13": {"row": 16, "behavior": "Unnamed: 29", "behavior_trials": "Unnamed: 34", "trials_in_session": "Unnamed: 36", "calculate": "Unnamed: 38", "data_type": "Unnamed: 40", "result_past_week": "Unnamed: 41"}
+        }
+    },
+    "home_protests": {
+        "range": [18, 23],
+        "columns": {
+            "short_protests": {
+                "cry": { "row": 18 , "action": "Unnamed: 20", "count": "Unnamed: 23" },
+                "scream": {"row": 18, "action": "Unnamed: 24", "count": "Unnamed: 27" },
+                "hit_ppl": {"row": 18, "action": "Unnamed: 38", "count": "Unnamed: 31"},
+                "kick_ppl": {"row": 18, "action": "Unnamed: 32", "count": "Unnamed: 35"},
+                "bite_ppl": {"row": 18, "action": "Unnamed: 36", "count": "Unnamed: 39"},
+                "scratch_ppl": {"row": 18, "action": "Unnamed: 41", "count": "Unnamed: 45"},
+                "laughed_uncontrollably": {"row": 18, "action": "Unnamed: 46", "count": "Unnamed: 49"},
+                "this_week_cnt": {"row": 19, "count": "Unnamed: 7"},
+                "past_week_cnt": {"row": 19, "count": "Unnamed: 11"},
+                "cry_with_tears": {"row": 19, "action": "Unnamed: 20", "count": "Unnamed: 23" },
+                "drop": {"row": 19, "action": "Unnamed: 24", "count": "Unnamed: 27" },
+                "hit_obj": {"row": 19, "action": "Unnamed: 28", "count": "Unnamed: 31" },
+                "kick_obj": {"row": 19, "action": "Unnamed: 32", "count": "Unnamed: 35" },
+                "bite_obj": {"row": 19, "action": "Unnamed: 36", "count": "Unnamed: 39" },
+                "throw_obj": {"row": 19, "action": "Unnamed: 41", "count": "Unnamed: 45" },
+                "etc": {"row": 19, "action": "Unnamed: 46", "count": "Unnamed: 49" },
+                "this_week_avg_time": {"row": 20, "time": "Unnamed: 7"},
+                "past_week_avg_time": {"row": 20, "time": "Unnamed: 11"},
+                "function_of_bx_item1": {"row": 20, "function_item": "Unnamed: 15", "function_item_cnt": "Unnamed: 18"},
+                "whine": {"row": 20, "action":"Unnamed: 20", "count": "Unnamed: 23"},
+                "elope": {"row": 20, "action":"Unnamed: 24", "count": "Unnamed: 27"},
+                "hit_self": {"row": 20, "action":"Unnamed: 28", "count": "Unnamed: 31"},
+                "throw_to_ppl": {"row": 20, "action":"Unnamed: 32", "count": "Unnamed: 35"},
+                "bite_self": {"row": 20, "action":"Unnamed: 36", "count": "Unnamed: 39"},
+                "scratch_self": {"row": 20, "action":"Unnamed: 41", "count": "Unnamed: 45"}
+            },
+            "long_protests": {
+                "this_week_cnt": {"row": 21, "count": "Unnamed: 7"},
+                "past_week_cnt": {"row": 21, "count": "Unnamed: 11"},
+                "function_of_bx_item2": {"row": 21, "function_item": "Unnamed: 15", "function_item_cnt": "Unnamed: 18"},
+                "cry": { "row": 21, "action": "Unnamed: 20", "count": "Unnamed: 23" },
+                "scream": {"row": 21, "action": "Unnamed: 24", "count": "Unnamed: 27" },
+                "hit_ppl": {"row": 21, "action": "Unnamed: 38", "count": "Unnamed: 31"},
+                "kick_ppl": {"row": 21, "action": "Unnamed: 32", "count": "Unnamed: 35"},
+                "bite_ppl": {"row": 21, "action": "Unnamed: 36", "count": "Unnamed: 39"},
+                "scratch_ppl": {"row": 21, "action": "Unnamed: 41", "count": "Unnamed: 45"},
+                "this_week_avg_time": {"row": 22, "time": "Unnamed: 7"},
+                "past_week_avg_time": {"row": 22, "time": "Unnamed: 11"},
+                "function_of_bx_item3": {"row": 22, "function_item": "Unnamed: 15", "function_item_cnt": "Unnamed: 18"},
+                "cry_with_tears": {"row": 22, "action": "Unnamed: 20", "count": "Unnamed: 23" },
+                "drop": {"row": 22, "action": "Unnamed: 24", "count": "Unnamed: 27" },
+                "hit_obj": {"row": 22, "action": "Unnamed: 28", "count": "Unnamed: 31" },
+                "kick_obj": {"row": 22, "action": "Unnamed: 32", "count": "Unnamed: 35" },
+                "bite_obj": {"row": 22, "action": "Unnamed: 36", "count": "Unnamed: 39" },
+                "throw_obj": {"row": 22, "action": "Unnamed: 41", "count": "Unnamed: 45" },
+                "laughed_uncontrollably": {"row": 22, "action": "Unnamed: 46", "count": "Unnamed: 49" },
+                "total_ssn_cnt": {"row": 23, "count": "Unnamed: 11"},
+                "function_of_bx_item4": {"row": 23, "function_item": "Unnamed: 15", "function_item_cnt": "Unnamed: 18"},
+                "whine": {"row": 23, "action":"Unnamed: 20", "count": "Unnamed: 23"},
+                "elope": {"row": 23, "action":"Unnamed: 24", "count": "Unnamed: 27"},
+                "hit_self": {"row": 23, "action":"Unnamed: 28", "count": "Unnamed: 31"},
+                "throw_to_ppl": {"row": 23, "action":"Unnamed: 32", "count": "Unnamed: 35"},
+                "bite_self": {"row": 23, "action":"Unnamed: 36", "count": "Unnamed: 39"},
+                "scratch_self": {"row": 23, "action":"Unnamed: 41", "count": "Unnamed: 45"},
+                "etc": {"row": 23, "action": "Unnamed: 46", "count": "Unnamed: 49"}
+            }
+        }
+    }
+}

@@ -1,0 +1,140 @@
+you must read this and follow this rule when expert data.
+1. number-number is index-unnamed_value
+    [0, [['Unnamed: 1', 'child:'], ['Unnamed: 4', '김단우\t\t\t\t\t\t\t\t\t'], ['Unnamed: 25', 'data periods'], ['Unnamed: 29', '@h'], ['Unnamed: 30', '24.11.14~24.11.20'], ['Unnamed: 54', 'Treatment Summary']]]
+    for example to expert 0-30 data
+    this is index 0 data.
+    so we find 0-4 is index 0 and unnamed 30
+    answer is '24.11.14~24.11.20'
+2. [number:number]-number means you have to loop logic
+    for examplme [4:8] means for i in range(4, 9)
+3.  there is * in front of word it is variable
+    use the variable(dic, list) vlaue
+    for example line46 is variable
+    If * is attached, use the value of the variable. Otherwise, just use the value of index-unnamed in json.
+
+######## BX ##########
+0: 0-4 : name || 0-30 : home period
+1: 1-4: leader name || 1-30 : school period
+
+[4:8]: treatment information 
+    4-1 : home session 
+    5-1 : training sessions
+    6-1 : school sessions
+    7-1 : school training sessions
+    8-1 : community trips
+    [4:8]-11 : teacher NAME
+    [4:8]-17 EXCUTE CNT of teacher
+
+[10:16]: traking sheet Data 
+*data Type: [1: percentage, 2: per session, 3: per week] 
+1.
+    [10:16]-2: behaviors 
+    [10:16]-7: behaviors trials 
+    [10:16]-8 divide 
+    [10:16]-9 trials in session
+    [10:16]-11: calcuate of [10:16]-[7:9] 
+    [10:16]-13: data Type (/ssn is type of 2)
+    [10:16]-14: result of past week
+2.
+    [10:16]-29: behaviors 
+    [10:16]-34: behaviors trials 
+    [10:16]-35: divide 
+    [10:16]-36: trials in session
+    [10:16]-38: calcuate of [10:16]-[34:36] 
+    [10:16]-40: data Type (/ssn is type of 2)
+    [10:16]-41: result of past week
+
+[18:23]: home protests
+    *function_of_protest_dic: [1: ESCAPE, 2: ACCESS, 3: ATTENTION, 4: ALONE/PLAY]
+    *protests_dic: [
+        1: [cry, cry w tears], 
+        2: drop, 
+        3: scream, 
+        4: whine, 
+        5: [hit poeple, ht obj, hit self], 
+        6: [kick people, kick obj], 
+        7: [throw to people, throw obj], 
+        8: [scratch ppl, scratch self], 
+        9: [bite people, bite obj, bite self], 
+        10: elope, 11:laughed uncontrollably, 12: etc]
+    18-20: short protests    
+        18 Line Data
+            [18-20: *protests_dic[1][0] || 18-23: [18-20]'s cnt 
+            18-24: *protests_dic[3] || 18-27: [18-24]'s cnt 
+            18-28: *protests_dic[5][0] || 18-31: [18-28]'s cnt 
+            18-32: *protests_dic[6][0] || 18-35: [18-32]'s cnt
+            18-36: *protests_dic[9][0] || 18-39: [18-36]'s cnt
+            18-41: *protests_dic[8][0] || 18-45: [18-41]'s cnt]
+        19 Line Data
+            19-7: this week excute protests cnt(short protests)
+            19-11: past week excute protests cnt(short protests)
+            [19-20: *protests_dic[1][1] || 19-23: [19-20]'s cnt 
+            19-24: *protests_dic[2] || 19-27: [19-24]'s cnt 
+            19-28: *protests_dic[5][1] || 19-31: [19-28]'s cnt 
+            19-32: *protests_dic[6][1] || 19-35: [19-32]'s cnt
+            19-36: *protests_dic[9][1] || 19-39: [19-36]'s cnt
+            19-41: *protests_dic[7][1] || 19-45: [19-41]'s cnt
+            19-46: *protests_dic[12] || 19-49: [19-46]'s cnt]
+        20Line Data
+            20-7: this week protests avg time(it have to change datetime(0, 1, 58)(this is example) to MM:SS)
+            20-11: past week protests avg time(it have to same logic with 20-7)
+            20-15: *function_of_protest_dic[1]
+            20-18: [20-15]'s cnt
+            [20-20: *protests_dic[4] || 20-23: [20-20]'s cnt 
+            20-24: *protests_dic[10] || 20-27: [20-24]'s cnt 
+            20-28: *protests_dic[5][2] || 20-31: [20-28]'s cnt 
+            20-32: *protests_dic[7][0] || 20-35: [20-32]'s cnt
+            20-36: *protests_dic[9][2] || 20-39: [20-36]'s cnt
+            20-41: *protests_dic[8][1] || 20-45: [20-41]'s cnt]
+    21-23: long protests
+        1: [cry, cry w tears], 
+        2: drop, 
+        3: scream, 
+        4: whine, 
+        5: [hit poeple, ht obj, hit self], 
+        6: [kick people, kick obj], 
+        7: [throw to people, throw obj], 
+        8: [scratch ppl, scratch self], 
+        9: [bite people, bite obj, bite self], 
+        10: elope, 11:laughed uncontrollably, 12: etc]
+        21 Line Data
+            21-7: this week excute protests cnt(long protests)
+            21-11: past week excute protests cnt(long protests)
+            21-15: *function_of_protest_dic[2]
+            21-18: [21-15]'s cnt
+            [21-20: *protests_dic[1][0] || 21-23: [21-20]'s cnt 
+            21-24: *protests_dic[3] || 21-27: [21-24]'s cnt 
+            21-28: *protests_dic[5][0] || 21-31: [21-28]'s cnt 
+            21-32: *protests_dic[6][0] || 21-35: [21-32]'s cnt
+            21-36: *protests_dic[9][0] || 21-39: [21-36]'s cnt
+            21-41: *protests_dic[8][0] || 21-45: [21-41]'s cnt]
+        22 Line Data
+            22-7: this week protests avg time(it have to change datetime(0, 1, 58)(this is example) to MM:SS)
+            22-11: past week protests avg time(it have to same logic with 2-7)
+            22-15: *function_of_protest_dic[3]
+            22-18: [22-15]'s cnt
+            [22-20: *protests_dic[1][1] || 22-23: [22-20]'s cnt 
+            22-24: *protests_dic[2] || 22-27: [22-24]'s cnt 
+            22-28: *protests_dic[5][1] || 22-31: [22-28]'s cnt 
+            22-32: *protests_dic[6][1] || 22-35: [22-32]'s cnt
+            22-36: *protests_dic[9][1] || 22-39: [22-36]'s cnt
+            22-41: *protests_dic[7][1] || 22-45: [22-41]'s cnt
+            22-46: *protests_dic[11] || 22-49: [22-46]'s cnt]
+        23 Ling Data
+            23-7: just text of per session like cm, kg. here is #ssns
+            23-11: count of session
+            23-15: *function_of_protest_dic[4]
+            23-18: [23-15]'s cnt
+            [23-20: *protests_dic[4] || 23-23: [23-20]'s cnt 
+            23-24: *protests_dic[10] || 23-27: [23-24]'s cnt 
+            23-36: *protests_dic[9][2] || 23-39: [23-36]'s cnt
+            23-28: *protests_dic[5][2] || 23-31: [23-28]'s cnt 
+            23-32: *protests_dic[7][0] || 23-35: [23-32]'s cnt
+            23-41: *protests_dic[8][1] || 23-45: [23-41]'s cnt
+            22-46: *protests_dic[12] || 22-49: [22-46]'s cnt]
+[26:31]: school protests
+    it is same to home protests
+    [26:28] = home protests[18:20]
+    [28:31] = home protests[21:33]
+
+

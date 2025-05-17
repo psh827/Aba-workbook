@@ -1,0 +1,96 @@
+기능명세서 01 – 에켼 데이터 추출 및 저장
+
+✅ 기능명
+에켼 기반 데이터 추출 및 DB 저장 기능
+
+✅ 기능 개요
+	•	사용자가 React에서 .xlsx 파일을 업로드하면,
+	•	Python(Flask) 서버가 사전에 저장된 bx_info.txt, output3.json과 함께 해당 에켼을 가공한다.
+	•	가공된 결과는 JSON으로 React에 반환되고 사용자 화면에 표시된다.
+	•	사용자가 "저장" 버튼을 누르면, 해당 JSON은 Java(Spring Boot) 서버의 API(/data/save)로 전송되어 DB에 저장된다.
+
+✅ 주요 흉름도
+[사용자]
+  ↓
+[React]
+  └ Excel 파일 업로드
+      ↓
+[Python(Flask)]
+  └ bx_info.txt + output3.json + Excel 조합에서 JSON 생성
+      ↓
+[React]
+  └ JSON 결과 표시
+  └ 저장 버튼 클릭
+      ↓
+[Java(Spring Boot)]
+  └ POST /data/save
+      ↓
+[DB]
+  └ JSON 데이터 저장
+
+✅ 기능 목적
+	•	에켼로부터 추출된 데이터를 체계적으로 가공하고,
+	•	사용자 확인 후 DB에 안전히 저장하여
+	•	추후 시각화, 번출, 통계 등에 활용할 수 있도록 기반을 만들기 위해서 구현된다.
+
+✅ API 정보 (Java 저장 API)
+항목
+내용
+URL
+/data/save
+Method
+POST
+Content-Type
+application/json
+Request Body
+JSON 범위
+Response
+저장 완료 메시지 or 에러
+파일 예시
+[
+  { "section": "basic_info", "label": "name", "value": "김단우" },
+  { "section": "basic_info", "label": "prepared_by", "value": "박희정" },
+  { "section": "tracking_data", "label": "behaviors", "value": "딩기" }
+]
+반환 예시
+{ "message": "데이터 저장 완료" }
+
+✅ 처리 흉름 요약
+단계
+처리 내용
+1
+React에서 에켼 업로드
+2
+Flask가 데이터를 가공하여 JSON 반환
+3
+React가 JSON을 화면에 표시
+4
+사용자 확인 후, /data/save로 POST 전송
+5
+Java가 JSON 수신 후 DB에 저장
+6
+성공 / 실패 메시지 반환
+
+✅ 예외 및 유향성 처리
+항목
+처리 내용
+JSON이 비어있음
+400 응답, 저장 중단
+필수 필드 누락
+400 응답
+DB 저장 실패
+500 응답 (Exception 메시지)
+
+✅ 향후 확장 계획
+항목
+설명
+사용자 ID 포함
+사용자별 데이터 구분
+저장 기록
+저장 일자/시간 기록
+데이터 버전 관리
+동일 항목 변경 시 버전 상승
+데이터 조회
+저장된 데이터 조회 API 구현 예정
+통합 백업오피스
+관리자가 확인 가능한 UI 제공 (예정)

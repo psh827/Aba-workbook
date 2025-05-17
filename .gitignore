@@ -1,0 +1,51 @@
+# macOS 시스템 파일
+.DS_Store
+
+# Java / Gradle
+/build
+/.gradle
+!gradle/wrapper/gradle-wrapper.jar
+.gradle/
+*.class
+*.jar
+*.war
+*.log
+
+# Spring Boot
+/tmp
+/out
+/target
+
+# Node / React
+node_modules/
+dist/
+.build/
+.next/
+coverage/
+
+# 환경 변수 파일
+.env
+.env.*
+
+# IDE 설정
+.idea/
+*.iml
+.vscode/
+
+# OS 관련 파일
+Thumbs.db
+Desktop.ini
+
+# 테스트 로그
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# 엑셀 파일 제외
+*.xls
+*.xlsx
+*.xlsm
+
+# 기타
+*.swp
+*.swo
