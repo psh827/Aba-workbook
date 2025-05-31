@@ -25,7 +25,7 @@ def extract_programs(info, data):
             if item_val:
                 items.append({
                     "item": item_val,
-                    "strength": st_val,
+                    "item_status": st_val,
                     "tsm": tsm_val
                 })
 
@@ -64,14 +64,14 @@ def extract_reinforcement_samplings(entries, data):
             "first_row": {
                 "ratios_text": get_nested(entry["first_row"]["ratios_text"]),
                 "ratios_suc": get_nested(entry["first_row"]["ratios_suc"]),
-                "ratios_attemp": get_nested(entry["first_row"]["ratios_attemp"]),
+                "ratios_attempt": get_nested(entry["first_row"]["ratios_attemp"]),
                 "note1": get_nested(entry["first_row"]["note1"]),
                 "note2": get_nested(entry["first_row"]["note2"])
             },
             "second_row": {
                 "ratios_text": get_nested(entry["second_row"]["ratios_text"]),
                 "ratios_suc": get_nested(entry["second_row"]["ratios_suc"]),
-                "ratios_attemp": get_nested(entry["second_row"]["ratios_attemp"]),
+                "ratios_attempt": get_nested(entry["second_row"]["ratios_attemp"]),
                 "note1": get_nested(entry["second_row"]["note1"]),
                 "note2": get_nested(entry["second_row"]["note2"])
             }
@@ -100,12 +100,12 @@ def extract_prompting_hierarchy_with_inheritance(blocks, data):
             "first_ratio": {
                 "text": get_cell(data, block["ratios"]["first_ratio"]["text"]["row"], block["ratios"]["first_ratio"]["text"]["col"]),
                 "success_cnt": get_cell(data, block["ratios"]["first_ratio"]["success_cnt"]["row"], block["ratios"]["first_ratio"]["success_cnt"]["col"]),
-                "attemp_cnt": get_cell(data, block["ratios"]["first_ratio"]["attemp_cnt"]["row"], block["ratios"]["first_ratio"]["attemp_cnt"]["col"])
+                "attempt_cnt": get_cell(data, block["ratios"]["first_ratio"]["attemp_cnt"]["row"], block["ratios"]["first_ratio"]["attemp_cnt"]["col"])
             },
             "second_ratio": {
                 "text": get_cell(data, block["ratios"]["second_ratio"]["text"]["row"], block["ratios"]["second_ratio"]["text"]["col"]),
                 "success_cnt": get_cell(data, block["ratios"]["second_ratio"]["success_cnt"]["row"], block["ratios"]["second_ratio"]["success_cnt"]["col"]),
-                "attemp_cnt": get_cell(data, block["ratios"]["second_ratio"]["attemp_cnt"]["row"], block["ratios"]["second_ratio"]["attemp_cnt"]["col"]),
+                "attempt_cnt": get_cell(data, block["ratios"]["second_ratio"]["attemp_cnt"]["row"], block["ratios"]["second_ratio"]["attemp_cnt"]["col"]),
                 "session_cnt": get_cell(data, block["ratios"]["second_ratio"]["session_cnt"]["row"], block["ratios"]["second_ratio"]["session_cnt"]["col"]),
                 "tsm": get_cell(data, block["ratios"]["second_ratio"]["tsm"]["row"], block["ratios"]["second_ratio"]["tsm"]["col"])
             }

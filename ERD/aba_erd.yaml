@@ -1,0 +1,282 @@
+
+tables:
+  - name: Leaders
+    columns:
+      - name: id
+        type: VARCHAR(10)
+        primaryKey: true
+      - name: name
+        type: VARCHAR(100)
+      - name: phone
+        type: VARCHAR(20)
+      - name: hire_date
+        type: VARCHAR(8)
+      - name: auth_cd_no
+        type: VARCHAR(3)
+      - name: child_id
+        type: VARCHAR(100)
+      - name: login_id
+        type: VARCHAR(50)
+      - name: login_pw
+        type: VARCHAR(50)
+
+  - name: Child
+    columns:
+      - name: id
+        type: VARCHAR(10)
+        primaryKey: true
+      - name: name
+        type: VARCHAR(100)
+      - name: age
+        type: INT
+      - name: leader_id
+        type: BIGINT
+      - name: mom_id
+        type: VARCHAR(10)
+
+  - name: Programs
+    columns:
+      - name: program_id
+        type: VARCHAR(20)
+        primaryKey: true
+      - name: week_cnt
+        type: VARCHAR(10)
+      - name: child_id
+        type: BIGINT
+      - name: program_name
+        type: VARCHAR(100)
+      - name: session_cnt
+        type: INT
+
+  - name: Program_items
+    columns:
+      - name: item_id
+        type: BIGINT
+        primaryKey: true
+      - name: program_id
+        type: VARCHAR(20)
+      - name: item_name
+        type: VARCHAR(100)
+      - name: st
+        type: VARCHAR(10)
+      - name: tsm
+        type: INT
+
+  - name: Program_notes
+    columns:
+      - name: note_id
+        type: BIGINT
+        primaryKey: true
+      - name: program_id
+        type: VARCHAR(20)
+      - name: note
+        type: TEXT
+
+  - name: prompting_hierarchy
+    columns:
+      - name: hierarchy_id
+        type: VARCHAR(20)
+        primaryKey: true
+      - name: week_cnt
+        type: VARCHAR(10)
+      - name: child_id
+        type: BIGINT
+      - name: program_name
+        type: VARCHAR(100)
+      - name: category
+        type: VARCHAR(50)
+      - name: total_sessions
+        type: INT
+      - name: sitting_count
+        type: INT
+
+  - name: prompting_items
+    columns:
+      - name: item_id
+        type: BIGINT
+        primaryKey: true
+      - name: hierarchy_id
+        type: VARCHAR(20)
+      - name: child_id
+        type: BIGINT
+      - name: item_name
+        type: VARCHAR(100)
+      - name: item_suc_cnt
+        type: INT
+      - name: item_total_cnt
+        type: INT
+
+  - name: prompting_notes
+    columns:
+      - name: note_id
+        type: BIGINT
+        primaryKey: true
+      - name: hierarchy_id
+        type: VARCHAR(20)
+      - name: item_id
+        type: BIGINT
+      - name: note_date
+        type: DATE
+      - name: note
+        type: TEXT
+
+  - name: prompting_steps
+    columns:
+      - name: step_id
+        type: BIGINT
+        primaryKey: true
+      - name: hierarchy_id
+        type: VARCHAR(20)
+      - name: seq
+        type: INT
+      - name: step
+        type: VARCHAR(50)
+      - name: ind
+        type: VARCHAR(10)
+      - name: hip
+        type: VARCHAR(10)
+      - name: note
+        type: TEXT
+
+  - name: protests
+    columns:
+      - name: protest_id
+        type: VARCHAR(20)
+        primaryKey: true
+      - name: child_id
+        type: BIGINT
+      - name: week_cnt
+        type: VARCHAR(10)
+      - name: protest_type
+        type: ENUM('short','long')
+      - name: protest_date
+        type: VARCHAR(8)
+      - name: protest_time
+        type: VARCHAR(10)
+      - name: protest_location
+        type: VARCHAR(100)
+      - name: staff_name
+        type: VARCHAR(50)
+      - name: staff_code
+        type: BIGINT
+      - name: pre_condition
+        type: TEXT
+      - name: duration_sec
+        type: INT
+      - name: function_type_cd
+        type: VARCHAR(5)
+      - name: result
+        type: TEXT
+      - name: behavior_code
+        type: VARCHAR(5)
+
+  - name: reinforcement_samplings
+    columns:
+      - name: sampling_id
+        type: VARCHAR(20)
+        primaryKey: true
+      - name: child_id
+        type: BIGINT
+      - name: week_cnt
+        type: VARCHAR(10)
+      - name: category
+        type: VARCHAR(20)
+      - name: content
+        type: VARCHAR(100)
+
+  - name: reinforcement_notes
+    columns:
+      - name: note_id
+        type: BIGINT
+        primaryKey: true
+      - name: sampling_id
+        type: VARCHAR(20)
+      - name: note
+        type: TEXT
+
+  - name: sessions
+    columns:
+      - name: week_cnt
+        type: VARCHAR(10)
+        primaryKey: true
+      - name: child_id
+        type: BIGINT
+        primaryKey: true
+      - name: home_sessions
+        type: INT
+      - name: training_sessions
+        type: INT
+      - name: school_sessions
+        type: INT
+      - name: school_training_sessions
+        type: INT
+
+  - name: tracking_data
+    columns:
+      - name: id
+        type: BIGINT
+        primaryKey: true
+      - name: child_id
+        type: BIGINT
+      - name: week_cnt
+        type: VARCHAR(10)
+      - name: behavior
+        type: VARCHAR(100)
+      - name: behavior_trials
+        type: INT
+      - name: trials_in_session
+        type: FLOAT
+      - name: data_type
+        type: VARCHAR(10)
+
+  - name: treatment_information
+    columns:
+      - name: treatment_id
+        type: BIGINT
+        primaryKey: true
+      - name: child_id
+        type: BIGINT
+      - name: week_cnt
+        type: VARCHAR(10)
+      - name: staff_code
+        type: BIGINT
+      - name: session_cnt
+        type: INT
+
+relationships:
+  - from: Child.leader_id
+    to: Leaders.id
+  - from: Programs.child_id
+    to: Child.id
+  - from: Program_items.program_id
+    to: Programs.program_id
+  - from: Program_notes.program_id
+    to: Programs.program_id
+  - from: prompting_hierarchy.child_id
+    to: Child.id
+  - from: prompting_items.hierarchy_id
+    to: prompting_hierarchy.hierarchy_id
+  - from: prompting_items.child_id
+    to: Child.id
+  - from: prompting_notes.hierarchy_id
+    to: prompting_hierarchy.hierarchy_id
+  - from: prompting_notes.item_id
+    to: prompting_items.item_id
+  - from: prompting_steps.hierarchy_id
+    to: prompting_hierarchy.hierarchy_id
+  - from: protests.child_id
+    to: Child.id
+  - from: protests.staff_code
+    to: Leaders.id
+  - from: reinforcement_samplings.child_id
+    to: Child.id
+  - from: reinforcement_notes.sampling_id
+    to: reinforcement_samplings.sampling_id
+  - from: sessions.child_id
+    to: Child.id
+  - from: tracking_data.child_id
+    to: Child.id
+  - from: treatment_information.child_id
+    to: Child.id
+  - from: treatment_information.staff_code
+    to: Leaders.id

@@ -23,7 +23,7 @@ const ProgramsSection = ({ data }) => {
           <div className="item-grid-container">
             <div className="item-grid-header">
               <span className="item-col">아이템</span>
-              <span className="item-col">강도</span>
+              <span className="item-col">상태</span>
               <span className="item-col">TSM</span>
             </div>
             <div className="program-items-grouped">

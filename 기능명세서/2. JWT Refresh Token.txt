@@ -1,0 +1,9 @@
+[1] 로그인 성공
+    → Access Token + Refresh Token 생성
+    → Access는 프론트 저장, Refresh는 DB(login_id 기준) 저장
+
+[2] Access Token 만료
+    → 프론트가 /token/refresh 엔드포인트에 Refresh Token과 login_id 전송
+
+[3] 서버는 Refresh Token 검증 후
+    → 새 Access Token (필요 시 Refresh Token도 갱신) 반환

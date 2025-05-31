@@ -40,9 +40,10 @@ def extract_protests(data, info, gubun):
             "bite_ppl", "bite_obj", "bite_self", "elope",
             "laughed_uncontrollably", "etc"
         ]
-        behaviors_tmp = {}
+        behaviors_tmp = []
         for behavior in behaviors:
-            behaviors_tmp[behavior] = get_cell(data, row, item[behavior])
+            value = get_cell(data, row, item[behavior])
+            behaviors_tmp.append({behavior: value})
 
         entry["behaviors"] = behaviors_tmp
         

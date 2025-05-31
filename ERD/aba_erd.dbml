@@ -1,0 +1,159 @@
+
+Project ABA_Workbook {
+  database_type: "MySQL"
+}
+
+Table Leaders {
+  id varchar(10) [pk, note: '담당자 고유 ID']
+  name varchar(100)
+  phone varchar(20)
+  hire_date varchar(8)
+  auth_cd_no varchar(3)
+  child_id varchar(100)
+  login_id varchar(50)
+  login_pw varchar(50)
+}
+
+Table Child {
+  id varchar(10) [pk, note: '아동 고유 ID']
+  name varchar(100)
+  age int
+  leader_id bigint
+  mom_id varchar(10)
+}
+
+Table Programs {
+  program_id varchar(20) [pk]
+  week_cnt varchar(10)
+  child_id bigint
+  program_name varchar(100)
+  session_cnt int
+}
+
+Table Program_items {
+  item_id bigint [pk]
+  program_id varchar(20)
+  item_name varchar(100)
+  st varchar(10)
+  tsm int
+}
+
+Table Program_notes {
+  note_id bigint [pk]
+  program_id varchar(20)
+  note text
+}
+
+Table prompting_hierarchy {
+  hierarchy_id varchar(20) [pk]
+  week_cnt varchar(10)
+  child_id bigint
+  program_name varchar(100)
+  category varchar(50)
+  total_sessions int
+  sitting_count int
+}
+
+Table prompting_items {
+  item_id bigint [pk]
+  hierarchy_id varchar(20)
+  child_id bigint
+  item_name varchar(100)
+  item_suc_cnt int
+  item_total_cnt int
+}
+
+Table prompting_notes {
+  note_id bigint [pk]
+  hierarchy_id varchar(20)
+  item_id bigint
+  note_date date
+  note text
+}
+
+Table prompting_steps {
+  step_id bigint [pk]
+  hierarchy_id varchar(20)
+  seq int
+  step varchar(50)
+  ind varchar(10)
+  hip varchar(10)
+  note text
+}
+
+Table protests {
+  protest_id varchar(20) [pk]
+  child_id bigint
+  week_cnt varchar(10)
+  protest_type enum('short','long')
+  protest_date varchar(8)
+  protest_time varchar(10)
+  protest_location varchar(100)
+  staff_name varchar(50)
+  staff_code bigint
+  pre_condition text
+  duration_sec int
+  function_type_cd varchar(5)
+  result text
+  behavior_code varchar(5)
+}
+
+Table reinforcement_samplings {
+  sampling_id varchar(20) [pk]
+  child_id bigint
+  week_cnt varchar(10)
+  category varchar(20)
+  content varchar(100)
+}
+
+Table reinforcement_notes {
+  note_id bigint [pk]
+  sampling_id varchar(20)
+  note text
+}
+
+Table Sessions {
+  week_cnt varchar(10) [pk]
+  child_id bigint [pk]
+  home_sessions int
+  training_sessions int
+  school_sessions int
+  school_training_sessions int
+}
+
+Table Tracking_data {
+  id bigint [pk]
+  child_id bigint
+  week_cnt varchar(10)
+  behavior varchar(100)
+  behavior_trials int
+  trials_in_session float
+  data_type varchar(10)
+}
+
+Table treatment_information {
+  treatment_id bigint [pk]
+  child_id bigint
+  week_cnt varchar(10)
+  staff_code bigint
+  session_cnt int
+}
+
+Ref: Child.leader_id > Leaders.id
+Ref: Programs.child_id > Child.id
+Ref: Program_items.program_id > Programs.program_id
+Ref: Program_notes.program_id > Programs.program_id
+Ref: prompting_hierarchy.child_id > Child.id
+Ref: prompting_items.hierarchy_id > prompting_hierarchy.hierarchy_id
+Ref: prompting_items.child_id > Child.id
+Ref: prompting_notes.hierarchy_id > prompting_hierarchy.hierarchy_id
+Ref: prompting_notes.item_id > prompting_items.item_id
+Ref: prompting_steps.hierarchy_id > prompting_hierarchy.hierarchy_id
+Ref: protests.child_id > Child.id
+Ref: protests.staff_code > Leaders.id
+Ref: reinforcement_samplings.child_id > Child.id
+Ref: reinforcement_notes.sampling_id > reinforcement_samplings.sampling_id
+Ref: Sessions.child_id > Child.id
+Ref: Tracking_data.child_id > Child.id
+Ref: treatment_information.child_id > Child.id
+Ref: treatment_information.staff_code > Leaders.id

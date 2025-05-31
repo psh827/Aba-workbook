@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import './TableStyles.css';
+import api from "../services/api";
 /* BX */
 import BXBasicInfo from "./bx/BXBasincInfo";
 import BXProtestSection from "./bx/BXProtestSection";
@@ -20,10 +21,28 @@ const FileUpload = () => {
   const [response, setResponse] = useState(null);
   const [view, setView] = useState(null);        // 메인 선택 상태
   const [subView, setSubView] = useState(null);  // protests 내부 상태
+  const [saveEnabled, setSaveEnabled] = useState(false); // 저장버튼 enable/disabled 처리
+  const [saveCompleted, setSaveCompleted] = useState(false);
   const 기능키 = ["escape", "access", "attention", "alone/play"];
   const programs_result_section_list = ['programs', 'reinforcement_samplings', 'prompting_hierarchy', 'prompting_hierarchy2'];
   const functionCounts = {};
   const handleChange = (e) => setFile(e.target.files[0]);
+
+  const handleSave = async () => {
+    if (!response) return alert("저장할 데이터가 없습니다.");
+
+    try {
+      const res = await api.post("http://localhost:8080/upload/save", response);
+      console.log(res)
+
+      alert("✅ 저장 완료!");
+      //setSaveCompleted(true); // ✅ 저장 버튼 비활성화
+    } catch (err) {
+      console.error("저장 실패:", err);
+      alert("❌ 저장 중 오류 발생");
+    }
+  };
+
 
   const handleUpload = async () => {
     if (!file) return alert("파일을 선택하세요.");
@@ -41,6 +60,8 @@ const FileUpload = () => {
       setResponse(result);
       setView(null);
       setSubView(null);
+      setSaveEnabled(true); // ✅ 저장 버튼 활성화
+      setSaveCompleted(false);
     } catch (err) {
       console.error("업로드 실패:", err);
     }
@@ -118,6 +139,17 @@ const FileUpload = () => {
       <h2>엑셀 파일 업로드</h2>
       <input type="file" accept=".xlsx,.xls" onChange={handleChange} />
       <button onClick={handleUpload}>업로드</button>
+      <button
+        onClick={handleSave}
+        disabled={!saveEnabled || saveCompleted}
+        style={{
+          cursor: !saveEnabled || saveCompleted ? 'not-allowed' : 'pointer',
+        }}
+      >
+        저장
+      </button>
+
+
 
       {response && (
         <div style={{ marginTop: "20px" }}>

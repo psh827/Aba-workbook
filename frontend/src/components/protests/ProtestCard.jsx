@@ -5,10 +5,10 @@ const ProtestCard = ({ data }) => {
   if (!data || data.length === 0) return <p>데이터가 없습니다.</p>;
   // 💡 유효한 데이터만 필터링: behaviors, date, staff, location, time, function, duration, happened_before 중 하나라도 있으면 표시
   const filtered = data.filter(item => {
-    const hasBehavior = item.behaviors && Object.values(item.behaviors).some(v => v !== null);
+    //const hasBehavior = item.behaviors && Object.values(item.behaviors).some(v => v !== null);
     const hasMeta =
       item.date || item.staff || item.location || item.time || item.function || item.duration?.min || item.happened_before;
-    return hasBehavior || hasMeta;
+    return hasMeta;
   });
 
   if (filtered.length === 0) {
@@ -32,8 +32,9 @@ const ProtestCard = ({ data }) => {
 
         // behaviors에서 값이 있는 항목만 필터링
         const behaviorList = Object.entries(behaviors || {}).filter(
-          ([_, value]) => value !== null
+          ([value]) => value !== null
         );
+      
 
         return (
           <div className="protest-card" key={idx}>
@@ -48,9 +49,25 @@ const ProtestCard = ({ data }) => {
               <div>
                 <strong>📌 행동:</strong>
                 <ul className="behavior-list">
-                  {behaviorList.map(([key, value]) => (
-                    <li key={key}>{key.replace(/_/g, " ")}: {value}</li>
-                  ))}
+                  {behaviorList
+                    ?.filter(([_, obj]) => {
+                      
+                      const keys = Object.keys(obj);
+                      if (keys.length === 0) return false
+                      const key = keys[0]
+                      const value = obj[key];
+                      return key && key.trim() !== "" && value !== null && value !== undefined && value.toString().trim() !== "";
+                    })
+                    .map(([_, obj]) => {
+                      const key = Object.keys(obj)[0];
+                      const value = obj[key];
+                      console.log(key, value)
+                      return (
+                        <li key={key}>
+                          {key.replace(/_/g, " ")}: {value}
+                        </li>
+                      );
+                    })}
                 </ul>
               </div>
             )}

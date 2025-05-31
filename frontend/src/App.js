@@ -1,13 +1,17 @@
 // frontend/src/App.jsx
 import React from "react";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import FileUpload from "./components/FileUpload";
+import LoginPage from "./pages/LoginPage";
 
 function App() {
   return (
-    <div style={{ padding: "40px" }}>
-      <h1>ABA Workbook</h1>
-      <FileUpload />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<LoginPage />} />
+        <Route path="/upload" element={<FileUpload />} />
+      </Routes>
+    </Router>
   );
 }
 

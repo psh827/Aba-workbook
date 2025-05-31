@@ -2,7 +2,6 @@ plugins {
     id 'java'
     id 'org.springframework.boot' version '3.2.3'
     id 'io.spring.dependency-management' version '1.1.3'
-    id "com.ewerk.gradle.plugins.querydsl" version "1.0.10"
 }
 
 group = 'com.example'
@@ -14,27 +13,40 @@ repositories {
 }
 
 dependencies {
+    // Spring & JPA
     implementation 'org.springframework.boot:spring-boot-starter-web'
-    implementation 'org.springframework.boot:spring-boot-starter-security'
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    implementation 'org.springframework.boot:spring-boot-starter-security'
     implementation 'org.springframework.boot:spring-boot-starter-validation'
-    implementation 'com.mysql:mysql-connector-j'
-    implementation 'com.querydsl:querydsl-jpa:5.0.0:jakarta'
-    implementation 'org.springframework.boot:spring-boot-starter'
+
+    // Lombok
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
 
+    // MySQL
+    runtimeOnly 'com.mysql:mysql-connector-j'
+
+    // QueryDSL (Spring Boot 3.x → jakarta 버전)
+    implementation 'com.querydsl:querydsl-jpa:5.0.0:jakarta'
     annotationProcessor 'com.querydsl:querydsl-apt:5.0.0:jakarta'
     annotationProcessor 'jakarta.persistence:jakarta.persistence-api'
     annotationProcessor 'jakarta.annotation:jakarta.annotation-api'
 
+    // Jwt
+    implementation 'org.springframework.boot:spring-boot-starter-security'
+    implementation 'io.jsonwebtoken:jjwt-api:0.11.5'
+    runtimeOnly 'io.jsonwebtoken:jjwt-impl:0.11.5'
+    runtimeOnly 'io.jsonwebtoken:jjwt-jackson:0.11.5'
+
+    // Test
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
-def querydslDir = layout.buildDirectory.dir("generated/querydsl").get().asFile
+// QueryDSL 수동 설정
+def querydslDir = file("build/generated/querydsl")
 
-tasks.withType(JavaCompile) {
-    options.generatedSourceOutputDirectory = file(querydslDir)
+tasks.withType(JavaCompile).configureEach {
+    options.annotationProcessorGeneratedSourcesDirectory = querydslDir
 }
 
 sourceSets {

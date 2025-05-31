@@ -11,7 +11,7 @@ from datetime import datetime
 import traceback 
 
 app = Flask(__name__)
-CORS(app, resources={r"/upload": {"origins": "*"}})
+CORS(app, resources={r"/*": {"origins": "http://localhost:3000"}})
 
 
 UPLOAD_FOLDER = "uploads"
@@ -55,8 +55,12 @@ def convert_excel_to_multiple_json(excel_path, base_output_dir):
     return folder_name, folder_path
 #"data/bx_info.json"
 # ✅ 업로드 API
-@app.route("/upload", methods=["POST"])
+@app.route('/upload', methods=['POST', 'OPTIONS'])
 def upload_file():
+    # ✅ OPTIONS 요청 응답 추가 (중요!)
+    if request.method == 'OPTIONS':
+        return '', 204
+
     bx_info_results = {}
     if 'file' not in request.files:
         return jsonify({"error": "파일이 포함되어야 합니다."}), 400
