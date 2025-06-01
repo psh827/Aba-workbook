@@ -7,6 +7,7 @@ import json
 from bx_logic import extract_from_bx_excel
 from programs_logic import extract_from_programs_excel
 from short_long_logic import extract_from_short_long_protests_excel
+from maintenance_logic import extract_from_maintenance_excel
 from datetime import datetime
 import traceback 
 
@@ -15,7 +16,7 @@ CORS(app, resources={r"/*": {"origins": "http://localhost:3000"}})
 
 
 UPLOAD_FOLDER = "uploads"
-RULE_PATH = ["data/bx_info.json", "data/programs_info.json", "data/short_protest_info.json", "data/long_protest_info.json"]
+RULE_PATH = ["data/bx_info.json", "data/programs_info.json", "data/short_protest_info.json", "data/long_protest_info.json", "data/maintenance_info.json"]
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 
 # ✅ 모든 시트를 순회해서 시트별 JSON 파일 생성
@@ -77,8 +78,14 @@ def upload_file():
         bx_info_results = extract_from_bx_excel(RULE_PATH[0], os.path.join(folder_path, "output_sheet_bx.json"))
         programs_results = extract_from_programs_excel(RULE_PATH[1], os.path.join(folder_path, "output_sheet_programs.json"))
         protests = extract_from_short_long_protests_excel(RULE_PATH[2], RULE_PATH[3], os.path.join(folder_path, "output_sheet_sP@h.json"), os.path.join(folder_path, "output_sheet_lP@h.json"))
-        print(bx_info_results)
-        return jsonify({"message": "✅ 시트별 JSON 생성 완료", "folder": folder_name, "bx_info_results": bx_info_results, "programs_result": programs_results, "protests_results": protests})
+        maintenance = extract_from_maintenance_excel(RULE_PATH[4], os.path.join(folder_path, "output_sheet_maintenance.json"))
+        return jsonify({"message": "✅ 시트별 JSON 생성 완료", 
+                        "folder": folder_name, 
+                        "bx_info_results": bx_info_results, 
+                        "programs_result": programs_results, 
+                        "protests_results": protests,
+                        "maintenance": maintenance
+                        })
     except Exception as e:
         traceback_str = traceback.format_exc()
         print("🔴 에러 발생:\n", traceback_str)

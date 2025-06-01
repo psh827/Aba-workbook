@@ -14,6 +14,7 @@ import com.example.backend.domain.reinforcement.ReinforcementNote;
 import com.example.backend.domain.reinforcement.ReinforcementSampling;
 import com.example.backend.domain.session.Session;
 import com.example.backend.domain.trackingData.TrackingData;
+import com.example.backend.domain.treatmentInfomation.TreatmentInformation;
 import com.example.backend.dto.upload.UploadRequest;
 import com.example.backend.repository.programs.ProgramItemRepository;
 import com.example.backend.repository.programs.ProgramNoteRepository;
@@ -38,10 +39,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.time.DayOfWeek;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-import java.util.Objects;
+import java.util.*;
 
 @Service
 @AllArgsConstructor
@@ -118,17 +116,20 @@ public class UploadService {
             String period = basicInfo.get("home_period").toString(); // Summary 작성 기간
 
             String weekCnt = getWeekCnt(period); // Summary 시작일 ex:250508
-            System.out.println("getweekCnt : " + DateUtils.getMonthlyWeekdayOrder(weekCnt, DayOfWeek.THURSDAY));
+            log.info("getweekCnt : {}", DateUtils.getMonthlyWeekdayOrder(weekCnt, DayOfWeek.THURSDAY));
+
             Child child = childRepository.findByName(childName)
                     .orElseThrow(() -> new RuntimeException("아이가 존재하지 않습니다. 아이 이름을 다시 확인해주세요."));
+            log.info("child : {}", child);
             String childId = child.getId(); // 아동 ID DB저장용
-            log.info("Child : {}", child);
-            /** SESSION DATA SET START **/
-            Session session = buildSessionEntity(treatmentInformation, childId, weekCnt);
-            /** SESSION DATA SET End **/
 
+            /** SESSION DATA SET START **/
+            Session session = buildSessionEntity(childId, weekCnt, treatmentInformation);
+            /** SESSION DATA SET End **/
+            log.info("######## session info ##########");
             log.info("session Entity : {}", session);
             sessionRepository.save(session);
+            log.info("session saved!");
             /** Tracking Data Data Set Start **/
             for(int i = 0; i < trackingData.size(); i++){
                 Map<String, Object> behavior = (Map<String, Object>) trackingData.get("behavior" + (i+1));
@@ -143,6 +144,7 @@ public class UploadService {
                             .build();
                     log.info("trackingDataEntity : {}", trackingDataEntity);
                     trackingDataRepository.save(trackingDataEntity);
+                    log.info("trackingData saved!");
                 }
 
             }
@@ -158,9 +160,11 @@ public class UploadService {
                     .build();
             log.info("non-responses trackingDataEntity : {}", trackingDataEntity);
             trackingDataRepository.save(trackingDataEntity);
+            log.info("trackingData(non-response) saved!");
             /** Tracking Data Data Set End **/
-
+            log.info("trackingData end!");
             /** Programs Data Set Start **/
+            log.info("programs Data start!");
             String programId = "";
             List<Map<String, Object>>  programItems = null;
             List<String> programNotes = null;
@@ -180,6 +184,7 @@ public class UploadService {
                             .build();
                     log.info("programEntity : {}", programEntity);
                     programRepository.save(programEntity);
+                    log.info("program saved!");
                     // program items 처리
                     programItems = (List<Map<String, Object>>)  program.get("items");
                     programNotes = (List<String>) program.get("notes");
@@ -196,6 +201,7 @@ public class UploadService {
                                     .build();
                             log.info("programItemEntity : {}", programItemEntity);
                             programItemRepository.save(programItemEntity);
+                            log.info("programItem saved!");
                         }
                     }
                     if(!CommonUtils.isNullOrBlank(programNotes) && programNotes.size() > 0){
@@ -206,6 +212,7 @@ public class UploadService {
                                     .build();
                             log.info("programNoteEntity : {}", programNoteEntity);
                             programNoteRepository.save(programNoteEntity);
+                            log.info("programNote saved!");
                         }
                     }
 
@@ -216,9 +223,6 @@ public class UploadService {
             /** Prompting Hierarchy Data Set Start **/
             String hierarchyId = "";
             PromptingHierarchy promptingHierarchyEntity = null;
-            PromptingItem promptingItemEntity = null;
-            PromptingNote promptingNoteEntity = null;
-            PromptingStep promptingStepEntity = null;
             List<Map<String, Object>> activities = null;
             Map<String, Object> promptingRatios = null;
             List<Map<String, Object>> ratios = new ArrayList<>();
@@ -242,8 +246,8 @@ public class UploadService {
                      promptingHierarchyRepository.save(promptingHierarchyEntity);
                     // prompting_step start
                     activities = (List<Map<String, Object>>) promptingItems.get("activities");
-                    savePromptingStepsAndNotes(hierarchyId, activities, "1");
-                    savePromptingItems(hierarchyId, childId, ratios, promptingItemRepository);
+                    savePromptingStepsAndNotes(hierarchyId, "1", activities);
+                    savePromptingItems(hierarchyId, childId, ratios);
                 }
             }
             /** Prompting Hierarchy Data Set End **/
@@ -267,22 +271,21 @@ public class UploadService {
                     log.info("promptingHierarchyEntity2 : {}", promptingHierarchyEntity);
                     promptingHierarchyRepository.save(promptingHierarchyEntity);
                     activities = (List<Map<String, Object>>) promptingItems.get("activities");
-                    savePromptingStepsAndNotes(hierarchyId, activities, "2");
-                    savePromptingItems(hierarchyId, childId, ratios, promptingItemRepository);
+                    savePromptingStepsAndNotes(hierarchyId, "2", activities);
+                    savePromptingItems(hierarchyId, childId, ratios);
 
                 }
             }
+            log.info("promptingHierarchy End!");
             /**.prompting Hierarchy2 Data Set End **/
             /** reinforcement Samplings Data Set Start **/
+            log.info("reinforcement Sampling Start!");
             String detailSampling = "";
             String title = "";
             String samplingId = "";
             Map<String, Object> first_row = null;
             Map<String, Object> second_row = null;
             Map<String, Object> sampling_info = null;
-            ReinforcementSampling reinforcementSamplingEntity = null;
-            ReinforcementItem reinforcementItemEntity = null;
-            ReinforcementNote reinforcementNoteEntity = null;
             for(int i = 0; i < reinforcementSamplings.size(); i++){
                 Map<String, Object> sampling = (Map<String, Object>) reinforcementSamplings.get(i);
                 if(!CommonUtils.isNullOrBlank(sampling) && !CommonUtils.isNullOrBlank(sampling.get("title"))){
@@ -292,22 +295,29 @@ public class UploadService {
                     first_row = (Map<String, Object>) sampling.get("first_row");
                     second_row = (Map<String, Object>) sampling.get("second_row");
                     sampling_info = (Map<String, Object>) sampling.get("sampling_info");
-                    saveReinforcementSampling(sampling, first_row, sampling_info, samplingId, childId, weekCnt, detailSampling, title);
-                    saveReinforcementSampling(sampling, second_row, sampling_info, samplingId, childId, weekCnt, detailSampling, title);
+                    saveReinforcementSampling(samplingId, childId, weekCnt, detailSampling, title, sampling, first_row, sampling_info);
+                    saveReinforcementSampling(samplingId, childId, weekCnt, detailSampling, title, sampling, second_row, sampling_info);
                 }
             }
+            log.info("reinforcement Sampling End!");
             /** reinforcement Samplings Data Set End **/
             /** protests Data Set Start **/
+            log.info("Protests Start");
             saveProtests(weekCnt, childId, "short", shortProtests);
             saveProtests(weekCnt, childId, "long", longProtests);
+            log.info("Protests End");
             /** protests Data Set End **/
+            /** Treatment information Data Set Start **/
+            log.info("treatment information Start!");
+            saveTreatmentInformation(weekCnt, childId, (List<Map<String, Object>>) treatmentInformation.get("staff"));
+
         }catch (Exception e){
             e.printStackTrace();
         }
         return null;
     }
 
-    public Session buildSessionEntity(Map<String, Object> treatmentInformation, String childId, String weekCnt) {
+    public Session buildSessionEntity(String childId, String weekCnt, Map<String, Object> treatmentInformation) {
         int homeSessionCntInt = parseCount(treatmentInformation, "home_sessions");
         int schoolSessionCntInt = parseCount(treatmentInformation, "school_sessions");
         int communityTripsCntInt = parseCount(treatmentInformation, "community_trips");
@@ -323,6 +333,38 @@ public class UploadService {
                 .communityTrips(communityTripsCntInt)
                 .schoolTrainingSessions(schoolTrainingSessionCntInt)
                 .build();
+    }
+
+    public void saveTreatmentInformation(
+            String childId,
+            String weekCnt,
+            List<Map<String, Object>> staffInfoArray
+    ) {
+            TreatmentInformation treatmentInformationEntity = null;
+            for(Map<String, Object> staffInfo : staffInfoArray){
+                String th1 = staffInfo.get("th1") != null ? staffInfo.get("th1").toString() : "";
+                String th2 = staffInfo.get("th2") != null ? staffInfo.get("th2").toString() : "";
+                if(!CommonUtils.isNullOrBlank(th1)){
+                    treatmentInformationEntity = TreatmentInformation.builder()
+                            .weekCnt(weekCnt)
+                            .childId(childId)
+                            .staffName(th1)
+                            .sessionCnt(CommonUtils.safeToInt(staffInfo.get("th1_cnt").toString()))
+                            .build();
+                    log.info("treatmentInformationEntity : {}", treatmentInformationEntity);
+                    treatmentInformationRepository.save(treatmentInformationEntity);
+                }
+                if(!CommonUtils.isNullOrBlank(th2)){
+                    treatmentInformationEntity = TreatmentInformation.builder()
+                            .weekCnt(weekCnt)
+                            .childId(childId)
+                            .staffName(th2)
+                            .sessionCnt(CommonUtils.safeToInt(staffInfo.get("th2_cnt").toString()))
+                            .build();
+                    log.info("treatmentInformationEntity2 : {}", treatmentInformationEntity);
+                    treatmentInformationRepository.save(treatmentInformationEntity);
+                }
+            }
     }
 
     public PromptingHierarchy buildPromptingHierarchyEntity(
@@ -348,8 +390,8 @@ public class UploadService {
 
     public void savePromptingStepsAndNotes(
             String hierarchyId,
-            List<Map<String, Object>> activities,
-            String hierarchyType
+            String hierarchyType,
+            List<Map<String, Object>> activities
     ) {
         for (int i = 0; i < activities.size(); i++) {
             Map<String, Object> item = activities.get(i);
@@ -387,6 +429,8 @@ public class UploadService {
                                 .hip(StringUtils.nvl((String) item.get("hip"), "0"))
                                 .ind(StringUtils.nvl((String) item.get("ind"), "0"))
                                 .build();
+                        log.info("promptingStepEntity2 : {}", stepEntity);
+                        promptingStepRepository.save(stepEntity).getStepId();
                     }
                     PromptingNote2  noteEntity = null;
                     noteEntity = PromptingNote2.builder()
@@ -410,8 +454,7 @@ public class UploadService {
     public void savePromptingItems(
             String hierarchyId,
             String childId,
-            List<Map<String, Object>> ratios,
-            PromptingItemRepository promptingItemRepository
+            List<Map<String, Object>> ratios
     ) {
         for (int j = 0; j < ratios.size(); j++) {
             Map<String, Object> ratio = ratios.get(j);
@@ -439,13 +482,15 @@ public class UploadService {
     }
 
     public void saveReinforcementSampling(
-            Map<String, Object> sampling,
-            Map<String, Object> firstRow,
-            Map<String, Object> sampling_info,
-            String samplingId, String childId,
+            String samplingId,
+            String childId,
             String weekCnt,
             String detailSampling,
-            String title) {
+            String title,
+            Map<String, Object> sampling,
+            Map<String, Object> firstRow,
+            Map<String, Object> sampling_info
+            ) {
         // 강화 샘플링 엔티티 생성 및 저장
         ReinforcementSampling reinforcementSamplingEntity = ReinforcementSampling.builder()
                 .samplingId(samplingId)

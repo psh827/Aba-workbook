@@ -7,11 +7,19 @@
     "treatment_information": {
         "range": [4, 8],
         "columns": {
-            "home_sessions": {"row": 4, "action": "Unnamed: 1", "count":"Unnamed: 8", "th1": "Unnamed: 11", "th1_cnt": "Unnamed: 17", "th2": "Unnamed: 18", "th2_cnt": "Unnamed: 24"},
-            "training_sessions": {"row": 5, "action": "Unnamed: 1", "count":"Unnamed: 8", "th1": "Unnamed: 11", "th1_cnt": "Unnamed: 17", "th2": "Unnamed: 18", "th2_cnt": "Unnamed: 24"},
-            "school_sessions": {"row": 6, "action": "Unnamed: 1", "count":"Unnamed: 8", "th1": "Unnamed: 11", "th1_cnt": "Unnamed: 17", "th2": "Unnamed: 18", "th2_cnt": "Unnamed: 24"},
-            "school_training_sessions": {"row": 7, "action": "Unnamed: 1", "count":"Unnamed: 8", "th1": "Unnamed: 11", "th1_cnt": "Unnamed: 17", "th2": "Unnamed: 18", "th2_cnt": "Unnamed: 24"},
-            "community_trips": {"row": 8, "action": "Unnamed: 1", "count":"Unnamed: 8", "th1": "Unnamed: 11", "th1_cnt": "Unnamed: 17", "th2": "Unnamed: 18", "th2_cnt": "Unnamed: 24"}
+            "home_sessions": {"row": 4, "action": "Unnamed: 1", "count":"Unnamed: 8"},
+            "training_sessions": {"row": 5, "action": "Unnamed: 1", "count":"Unnamed: 8"},
+            "school_sessions": {"row": 6, "action": "Unnamed: 1", "count":"Unnamed: 8"},
+            "school_training_sessions": {"row": 7, "action": "Unnamed: 1", "count":"Unnamed: 8"},
+            "community_trips": {"row": 8, "action": "Unnamed: 1", "count":"Unnamed: 8"},
+            "staff": [
+                {"row": 4, "th1": "Unnamed: 11", "th1_cnt": "Unnamed: 17", "th2": "Unnamed: 18", "th2_cnt": "Unnamed: 24"},
+                {"row": 5, "th1": "Unnamed: 11", "th1_cnt": "Unnamed: 17", "th2": "Unnamed: 18", "th2_cnt": "Unnamed: 24"},
+                {"row": 6, "th1": "Unnamed: 11", "th1_cnt": "Unnamed: 17", "th2": "Unnamed: 18", "th2_cnt": "Unnamed: 24"},
+                {"row": 7, "th1": "Unnamed: 11", "th1_cnt": "Unnamed: 17", "th2": "Unnamed: 18", "th2_cnt": "Unnamed: 24"},
+                {"row": 8, "th1": "Unnamed: 11", "th1_cnt": "Unnamed: 17", "th2": "Unnamed: 18", "th2_cnt": "Unnamed: 24"}
+
+            ]
         }
     },
     "tracking_data": {

@@ -11,6 +11,7 @@ import java.time.LocalDateTime;
 @Getter @Setter
 @NoArgsConstructor
 @AllArgsConstructor
+@ToString
 @Builder
 public class TreatmentInformation {
 
@@ -24,8 +25,8 @@ public class TreatmentInformation {
     @Column(length = 10, nullable = false)
     private String weekCnt;  // 주차 정보
 
-    @Column(length = 10, nullable = false)
-    private String staffCode;  // 세션 담당자 ID (Leaders.id 참조)
+    @Column(length = 50, nullable = false)
+    private String staffName;  // 세션 담당자 이름
 
     @Column(nullable = false)
     private Integer sessionCnt = 0;  // 수행한 세션 횟수

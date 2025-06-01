@@ -19,11 +19,24 @@ def extract_basic_info(data, rules):
 def extract_treatment_info(data, rules):
     result = {}
     for key, info in rules["columns"].items():
-        row = info.get("row")
-        result[key] = {
-            subkey: get_cell(data, row, col)
-            for subkey, col in info.items() if subkey != "row"
-        }
+        if isinstance(info, dict):
+            row = info.get("row")
+            result[key] = {
+                subkey: get_cell(data, row, col)
+                for subkey, col in info.items()
+                if subkey != "row"
+            }
+
+        elif isinstance(info, list):
+            result[key] = []
+            for item in info:
+                row = item.get("row")
+                extracted = {
+                    subkey: get_cell(data, row, col)
+                    for subkey, col in item.items()
+                    if subkey != "row"
+                }
+                result[key].append(extracted)
     return result
 
 # ✅ 트래킹 데이터 추출 (columns 안에 row + 하위컬럼 존재)

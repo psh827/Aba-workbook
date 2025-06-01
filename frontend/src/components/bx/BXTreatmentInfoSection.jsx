@@ -37,27 +37,26 @@ const BXTreatmentInfoSection = ({ data }) => {
             </tr>
           </thead>
           <tbody>
-            {Object.entries(data).flatMap(([key, value]) => {
-              if (!value?.th1_cnt?.trim()) return [];
-              const rows = [];
-              Object.keys(value).forEach((k) => {
-                if (k.startsWith("th") && !k.includes("cnt")) {
-                  const teacherName = value[k];
-                  const countKey = `${k}_cnt`;
-                  const teacherCount = value[countKey];
+            {Array.isArray(data.staff) &&
+              data.staff.flatMap((item, index) => {
+                const rows = [];
+                Object.keys(item).forEach((key) => {
+                  if (key.startsWith("th") && !key.includes("cnt")) {
+                    const teacherName = item[key];
+                    const teacherCount = item[`${key}_cnt`];
 
-                  if (teacherName && teacherCount) {
-                    rows.push(
-                      <tr key={`${key}-${k}`}>
-                        <td>{teacherName}</td>
-                        <td>{teacherCount}</td>
-                      </tr>
-                    );
+                    if (teacherName && teacherCount) {
+                      rows.push(
+                        <tr key={`${index}-${key}`}>
+                          <td>{teacherName}</td>
+                          <td>{teacherCount}</td>
+                        </tr>
+                      );
+                    }
                   }
-                }
-              });
-              return rows;
-            })}
+                });
+                return rows;
+              })}
           </tbody>
         </table>
       </div>

@@ -1,0 +1,2552 @@
+[
+  {
+    "item_text": {
+      "row": 4,
+      "col": "Unnamed: 1"
+    },
+    "first_row": {
+      "ratios_text": {
+        "row": 4,
+        "col": "Unnamed: 11"
+      },
+      "ratios_suc": {
+        "row": 4,
+        "col": "Unnamed: 14"
+      },
+      "ratios_attemp": {
+        "row": 4,
+        "col": "Unnamed: 15"
+      },
+      "calculate": {
+        "row": 4,
+        "col": "Unnamed: 16"
+      },
+      "note": {
+        "row": 4,
+        "col": "Unnamed: 19"
+      }
+    },
+    "second_row": {
+      "ratios_text": {
+        "row": 5,
+        "col": "Unnamed: 11"
+      },
+      "ratios_suc": {
+        "row": 5,
+        "col": "Unnamed: 17"
+      },
+      "ratios_attemp": {
+        "row": 5,
+        "col": "Unnamed: 18"
+      },
+      "calculate": {
+        "row": 5,
+        "col": "Unnamed: 16"
+      },
+      "note": {
+        "row": 5,
+        "col": "Unnamed: 19"
+      }
+    }
+  },
+  {
+    "item_text": {
+      "row": 6,
+      "col": "Unnamed: 1"
+    },
+    "first_row": {
+      "ratios_text": {
+        "row": 6,
+        "col": "Unnamed: 11"
+      },
+      "ratios_suc": {
+        "row": 6,
+        "col": "Unnamed: 14"
+      },
+      "ratios_attemp": {
+        "row": 6,
+        "col": "Unnamed: 15"
+      },
+      "calculate": {
+        "row": 6,
+        "col": "Unnamed: 16"
+      },
+      "note": {
+        "row": 6,
+        "col": "Unnamed: 19"
+      }
+    },
+    "second_row": {
+      "ratios_text": {
+        "row": 7,
+        "col": "Unnamed: 11"
+      },
+      "ratios_suc": {
+        "row": 7,
+        "col": "Unnamed: 17"
+      },
+      "ratios_attemp": {
+        "row": 7,
+        "col": "Unnamed: 18"
+      },
+      "calculate": {
+        "row": 7,
+        "col": "Unnamed: 16"
+      },
+      "note": {
+        "row": 7,
+        "col": "Unnamed: 19"
+      }
+    }
+  },
+  {
+    "item_text": {
+      "row": 8,
+      "col": "Unnamed: 1"
+    },
+    "first_row": {
+      "ratios_text": {
+        "row": 8,
+        "col": "Unnamed: 11"
+      },
+      "ratios_suc": {
+        "row": 8,
+        "col": "Unnamed: 14"
+      },
+      "ratios_attemp": {
+        "row": 8,
+        "col": "Unnamed: 15"
+      },
+      "calculate": {
+        "row": 8,
+        "col": "Unnamed: 16"
+      },
+      "note": {
+        "row": 8,
+        "col": "Unnamed: 19"
+      }
+    },
+    "second_row": {
+      "ratios_text": {
+        "row": 9,
+        "col": "Unnamed: 11"
+      },
+      "ratios_suc": {
+        "row": 9,
+        "col": "Unnamed: 17"
+      },
+      "ratios_attemp": {
+        "row": 9,
+        "col": "Unnamed: 18"
+      },
+      "calculate": {
+        "row": 9,
+        "col": "Unnamed: 16"
+      },
+      "note": {
+        "row": 9,
+        "col": "Unnamed: 19"
+      }
+    }
+  },
+  {
+    "item_text": {
+      "row": 10,
+      "col": "Unnamed: 1"
+    },
+    "first_row": {
+      "ratios_text": {
+        "row": 10,
+        "col": "Unnamed: 11"
+      },
+      "ratios_suc": {
+        "row": 10,
+        "col": "Unnamed: 14"
+      },
+      "ratios_attemp": {
+        "row": 10,
+        "col": "Unnamed: 15"
+      },
+      "calculate": {
+        "row": 10,
+        "col": "Unnamed: 16"
+      },
+      "note": {
+        "row": 10,
+        "col": "Unnamed: 19"
+      }
+    },
+    "second_row": {
+      "ratios_text": {
+        "row": 11,
+        "col": "Unnamed: 11"
+      },
+      "ratios_suc": {
+        "row": 11,
+        "col": "Unnamed: 17"
+      },
+      "ratios_attemp": {
+        "row": 11,
+        "col": "Unnamed: 18"
+      },
+      "calculate": {
+        "row": 11,
+        "col": "Unnamed: 16"
+      },
+      "note": {
+        "row": 11,
+        "col": "Unnamed: 19"
+      }
+    }
+  },
+  {
+    "item_text": {
+      "row": 12,
+      "col": "Unnamed: 1"
+    },
+    "first_row": {
+      "ratios_text": {
+        "row": 12,
+        "col": "Unnamed: 11"
+      },
+      "ratios_suc": {
+        "row": 12,
+        "col": "Unnamed: 14"
+      },
+      "ratios_attemp": {
+        "row": 12,
+        "col": "Unnamed: 15"
+      },
+      "calculate": {
+        "row": 12,
+        "col": "Unnamed: 16"
+      },
+      "note": {
+        "row": 12,
+        "col": "Unnamed: 19"
+      }
+    },
+    "second_row": {
+      "ratios_text": {
+        "row": 13,
+        "col": "Unnamed: 11"
+      },
+      "ratios_suc": {
+        "row": 13,
+        "col": "Unnamed: 17"
+      },
+      "ratios_attemp": {
+        "row": 13,
+        "col": "Unnamed: 18"
+      },
+      "calculate": {
+        "row": 13,
+        "col": "Unnamed: 16"
+      },
+      "note": {
+        "row": 13,
+        "col": "Unnamed: 19"
+      }
+    }
+  },
+  {
+    "item_text": {
+      "row": 14,
+      "col": "Unnamed: 1"
+    },
+    "first_row": {
+      "ratios_text": {
+        "row": 14,
+        "col": "Unnamed: 11"
+      },
+      "ratios_suc": {
+        "row": 14,
+        "col": "Unnamed: 14"
+      },
+      "ratios_attemp": {
+        "row": 14,
+        "col": "Unnamed: 15"
+      },
+      "calculate": {
+        "row": 14,
+        "col": "Unnamed: 16"
+      },
+      "note": {
+        "row": 14,
+        "col": "Unnamed: 19"
+      }
+    },
+    "second_row": {
+      "ratios_text": {
+        "row": 15,
+        "col": "Unnamed: 11"
+      },
+      "ratios_suc": {
+        "row": 15,
+        "col": "Unnamed: 17"
+      },
+      "ratios_attemp": {
+        "row": 15,
+        "col": "Unnamed: 18"
+      },
+      "calculate": {
+        "row": 15,
+        "col": "Unnamed: 16"
+      },
+      "note": {
+        "row": 15,
+        "col": "Unnamed: 19"
+      }
+    }
+  },
+  {
+    "item_text": {
+      "row": 16,
+      "col": "Unnamed: 1"
+    },
+    "first_row": {
+      "ratios_text": {
+        "row": 16,
+        "col": "Unnamed: 11"
+      },
+      "ratios_suc": {
+        "row": 16,
+        "col": "Unnamed: 14"
+      },
+      "ratios_attemp": {
+        "row": 16,
+        "col": "Unnamed: 15"
+      },
+      "calculate": {
+        "row": 16,
+        "col": "Unnamed: 16"
+      },
+      "note": {
+        "row": 16,
+        "col": "Unnamed: 19"
+      }
+    },
+    "second_row": {
+      "ratios_text": {
+        "row": 17,
+        "col": "Unnamed: 11"
+      },
+      "ratios_suc": {
+        "row": 17,
+        "col": "Unnamed: 17"
+      },
+      "ratios_attemp": {
+        "row": 17,
+        "col": "Unnamed: 18"
+      },
+      "calculate": {
+        "row": 17,
+        "col": "Unnamed: 16"
+      },
+      "note": {
+        "row": 17,
+        "col": "Unnamed: 19"
+      }
+    }
+  },
+  {
+    "item_text": {
+      "row": 18,
+      "col": "Unnamed: 1"
+    },
+    "first_row": {
+      "ratios_text": {
+        "row": 18,
+        "col": "Unnamed: 11"
+      },
+      "ratios_suc": {
+        "row": 18,
+        "col": "Unnamed: 14"
+      },
+      "ratios_attemp": {
+        "row": 18,
+        "col": "Unnamed: 15"
+      },
+      "calculate": {
+        "row": 18,
+        "col": "Unnamed: 16"
+      },
+      "note": {
+        "row": 18,
+        "col": "Unnamed: 19"
+      }
+    },
+    "second_row": {
+      "ratios_text": {
+        "row": 19,
+        "col": "Unnamed: 11"
+      },
+      "ratios_suc": {
+        "row": 19,
+        "col": "Unnamed: 17"
+      },
+      "ratios_attemp": {
+        "row": 19,
+        "col": "Unnamed: 18"
+      },
+      "calculate": {
+        "row": 19,
+        "col": "Unnamed: 16"
+      },
+      "note": {
+        "row": 19,
+        "col": "Unnamed: 19"
+      }
+    }
+  },
+  {
+    "item_text": {
+      "row": 20,
+      "col": "Unnamed: 1"
+    },
+    "first_row": {
+      "ratios_text": {
+        "row": 20,
+        "col": "Unnamed: 11"
+      },
+      "ratios_suc": {
+        "row": 20,
+        "col": "Unnamed: 14"
+      },
+      "ratios_attemp": {
+        "row": 20,
+        "col": "Unnamed: 15"
+      },
+      "calculate": {
+        "row": 20,
+        "col": "Unnamed: 16"
+      },
+      "note": {
+        "row": 20,
+        "col": "Unnamed: 19"
+      }
+    },
+    "second_row": {
+      "ratios_text": {
+        "row": 21,
+        "col": "Unnamed: 11"
+      },
+      "ratios_suc": {
+        "row": 21,
+        "col": "Unnamed: 17"
+      },
+      "ratios_attemp": {
+        "row": 21,
+        "col": "Unnamed: 18"
+      },
+      "calculate": {
+        "row": 21,
+        "col": "Unnamed: 16"
+      },
+      "note": {
+        "row": 21,
+        "col": "Unnamed: 19"
+      }
+    }
+  },
+  {
+    "item_text": {
+      "row": 22,
+      "col": "Unnamed: 1"
+    },
+    "first_row": {
+      "ratios_text": {
+        "row": 22,
+        "col": "Unnamed: 11"
+      },
+      "ratios_suc": {
+        "row": 22,
+        "col": "Unnamed: 14"
+      },
+      "ratios_attemp": {
+        "row": 22,
+        "col": "Unnamed: 15"
+      },
+      "calculate": {
+        "row": 22,
+        "col": "Unnamed: 16"
+      },
+      "note": {
+        "row": 22,
+        "col": "Unnamed: 19"
+      }
+    },
+    "second_row": {
+      "ratios_text": {
+        "row": 23,
+        "col": "Unnamed: 11"
+      },
+      "ratios_suc": {
+        "row": 23,
+        "col": "Unnamed: 17"
+      },
+      "ratios_attemp": {
+        "row": 23,
+        "col": "Unnamed: 18"
+      },
+      "calculate": {
+        "row": 23,
+        "col": "Unnamed: 16"
+      },
+      "note": {
+        "row": 23,
+        "col": "Unnamed: 19"
+      }
+    }
+  },
+  {
+    "item_text": {
+      "row": 24,
+      "col": "Unnamed: 1"
+    },
+    "first_row": {
+      "ratios_text": {
+        "row": 24,
+        "col": "Unnamed: 11"
+      },
+      "ratios_suc": {
+        "row": 24,
+        "col": "Unnamed: 14"
+      },
+      "ratios_attemp": {
+        "row": 24,
+        "col": "Unnamed: 15"
+      },
+      "calculate": {
+        "row": 24,
+        "col": "Unnamed: 16"
+      },
+      "note": {
+        "row": 24,
+        "col": "Unnamed: 19"
+      }
+    },
+    "second_row": {
+      "ratios_text": {
+        "row": 25,
+        "col": "Unnamed: 11"
+      },
+      "ratios_suc": {
+        "row": 25,
+        "col": "Unnamed: 17"
+      },
+      "ratios_attemp": {
+        "row": 25,
+        "col": "Unnamed: 18"
+      },
+      "calculate": {
+        "row": 25,
+        "col": "Unnamed: 16"
+      },
+      "note": {
+        "row": 25,
+        "col": "Unnamed: 19"
+      }
+    }
+  },
+  {
+    "item_text": {
+      "row": 26,
+      "col": "Unnamed: 1"
+    },
+    "first_row": {
+      "ratios_text": {
+        "row": 26,
+        "col": "Unnamed: 11"
+      },
+      "ratios_suc": {
+        "row": 26,
+        "col": "Unnamed: 14"
+      },
+      "ratios_attemp": {
+        "row": 26,
+        "col": "Unnamed: 15"
+      },
+      "calculate": {
+        "row": 26,
+        "col": "Unnamed: 16"
+      },
+      "note": {
+        "row": 26,
+        "col": "Unnamed: 19"
+      }
+    },
+    "second_row": {
+      "ratios_text": {
+        "row": 27,
+        "col": "Unnamed: 11"
+      },
+      "ratios_suc": {
+        "row": 27,
+        "col": "Unnamed: 17"
+      },
+      "ratios_attemp": {
+        "row": 27,
+        "col": "Unnamed: 18"
+      },
+      "calculate": {
+        "row": 27,
+        "col": "Unnamed: 16"
+      },
+      "note": {
+        "row": 27,
+        "col": "Unnamed: 19"
+      }
+    }
+  },
+  {
+    "item_text": {
+      "row": 28,
+      "col": "Unnamed: 1"
+    },
+    "first_row": {
+      "ratios_text": {
+        "row": 28,
+        "col": "Unnamed: 11"
+      },
+      "ratios_suc": {
+        "row": 28,
+        "col": "Unnamed: 14"
+      },
+      "ratios_attemp": {
+        "row": 28,
+        "col": "Unnamed: 15"
+      },
+      "calculate": {
+        "row": 28,
+        "col": "Unnamed: 16"
+      },
+      "note": {
+        "row": 28,
+        "col": "Unnamed: 19"
+      }
+    },
+    "second_row": {
+      "ratios_text": {
+        "row": 29,
+        "col": "Unnamed: 11"
+      },
+      "ratios_suc": {
+        "row": 29,
+        "col": "Unnamed: 17"
+      },
+      "ratios_attemp": {
+        "row": 29,
+        "col": "Unnamed: 18"
+      },
+      "calculate": {
+        "row": 29,
+        "col": "Unnamed: 16"
+      },
+      "note": {
+        "row": 29,
+        "col": "Unnamed: 19"
+      }
+    }
+  },
+  {
+    "item_text": {
+      "row": 30,
+      "col": "Unnamed: 1"
+    },
+    "first_row": {
+      "ratios_text": {
+        "row": 30,
+        "col": "Unnamed: 11"
+      },
+      "ratios_suc": {
+        "row": 30,
+        "col": "Unnamed: 14"
+      },
+      "ratios_attemp": {
+        "row": 30,
+        "col": "Unnamed: 15"
+      },
+      "calculate": {
+        "row": 30,
+        "col": "Unnamed: 16"
+      },
+      "note": {
+        "row": 30,
+        "col": "Unnamed: 19"
+      }
+    },
+    "second_row": {
+      "ratios_text": {
+        "row": 31,
+        "col": "Unnamed: 11"
+      },
+      "ratios_suc": {
+        "row": 31,
+        "col": "Unnamed: 17"
+      },
+      "ratios_attemp": {
+        "row": 31,
+        "col": "Unnamed: 18"
+      },
+      "calculate": {
+        "row": 31,
+        "col": "Unnamed: 16"
+      },
+      "note": {
+        "row": 31,
+        "col": "Unnamed: 19"
+      }
+    }
+  },
+  {
+    "item_text": {
+      "row": 32,
+      "col": "Unnamed: 1"
+    },
+    "first_row": {
+      "ratios_text": {
+        "row": 32,
+        "col": "Unnamed: 11"
+      },
+      "ratios_suc": {
+        "row": 32,
+        "col": "Unnamed: 14"
+      },
+      "ratios_attemp": {
+        "row": 32,
+        "col": "Unnamed: 15"
+      },
+      "calculate": {
+        "row": 32,
+        "col": "Unnamed: 16"
+      },
+      "note": {
+        "row": 32,
+        "col": "Unnamed: 19"
+      }
+    },
+    "second_row": {
+      "ratios_text": {
+        "row": 33,
+        "col": "Unnamed: 11"
+      },
+      "ratios_suc": {
+        "row": 33,
+        "col": "Unnamed: 17"
+      },
+      "ratios_attemp": {
+        "row": 33,
+        "col": "Unnamed: 18"
+      },
+      "calculate": {
+        "row": 33,
+        "col": "Unnamed: 16"
+      },
+      "note": {
+        "row": 33,
+        "col": "Unnamed: 19"
+      }
+    }
+  },
+  {
+    "item_text": {
+      "row": 34,
+      "col": "Unnamed: 1"
+    },
+    "first_row": {
+      "ratios_text": {
+        "row": 34,
+        "col": "Unnamed: 11"
+      },
+      "ratios_suc": {
+        "row": 34,
+        "col": "Unnamed: 14"
+      },
+      "ratios_attemp": {
+        "row": 34,
+        "col": "Unnamed: 15"
+      },
+      "calculate": {
+        "row": 34,
+        "col": "Unnamed: 16"
+      },
+      "note": {
+        "row": 34,
+        "col": "Unnamed: 19"
+      }
+    },
+    "second_row": {
+      "ratios_text": {
+        "row": 35,
+        "col": "Unnamed: 11"
+      },
+      "ratios_suc": {
+        "row": 35,
+        "col": "Unnamed: 17"
+      },
+      "ratios_attemp": {
+        "row": 35,
+        "col": "Unnamed: 18"
+      },
+      "calculate": {
+        "row": 35,
+        "col": "Unnamed: 16"
+      },
+      "note": {
+        "row": 35,
+        "col": "Unnamed: 19"
+      }
+    }
+  },
+  {
+    "item_text": {
+      "row": 36,
+      "col": "Unnamed: 1"
+    },
+    "first_row": {
+      "ratios_text": {
+        "row": 36,
+        "col": "Unnamed: 11"
+      },
+      "ratios_suc": {
+        "row": 36,
+        "col": "Unnamed: 14"
+      },
+      "ratios_attemp": {
+        "row": 36,
+        "col": "Unnamed: 15"
+      },
+      "calculate": {
+        "row": 36,
+        "col": "Unnamed: 16"
+      },
+      "note": {
+        "row": 36,
+        "col": "Unnamed: 19"
+      }
+    },
+    "second_row": {
+      "ratios_text": {
+        "row": 37,
+        "col": "Unnamed: 11"
+      },
+      "ratios_suc": {
+        "row": 37,
+        "col": "Unnamed: 17"
+      },
+      "ratios_attemp": {
+        "row": 37,
+        "col": "Unnamed: 18"
+      },
+      "calculate": {
+        "row": 37,
+        "col": "Unnamed: 16"
+      },
+      "note": {
+        "row": 37,
+        "col": "Unnamed: 19"
+      }
+    }
+  },
+  {
+    "item_text": {
+      "row": 43,
+      "col": "Unnamed: 1"
+    },
+    "first_row": {
+      "ratios_text": {
+        "row": 43,
+        "col": "Unnamed: 11"
+      },
+      "ratios_suc": {
+        "row": 43,
+        "col": "Unnamed: 14"
+      },
+      "ratios_attemp": {
+        "row": 43,
+        "col": "Unnamed: 15"
+      },
+      "calculate": {
+        "row": 43,
+        "col": "Unnamed: 16"
+      },
+      "note": {
+        "row": 43,
+        "col": "Unnamed: 19"
+      }
+    },
+    "second_row": {
+      "ratios_text": {
+        "row": 44,
+        "col": "Unnamed: 11"
+      },
+      "ratios_suc": {
+        "row": 44,
+        "col": "Unnamed: 17"
+      },
+      "ratios_attemp": {
+        "row": 44,
+        "col": "Unnamed: 18"
+      },
+      "calculate": {
+        "row": 44,
+        "col": "Unnamed: 16"
+      },
+      "note": {
+        "row": 44,
+        "col": "Unnamed: 19"
+      }
+    }
+  },
+  {
+    "item_text": {
+      "row": 45,
+      "col": "Unnamed: 1"
+    },
+    "first_row": {
+      "ratios_text": {
+        "row": 45,
+        "col": "Unnamed: 11"
+      },
+      "ratios_suc": {
+        "row": 45,
+        "col": "Unnamed: 14"
+      },
+      "ratios_attemp": {
+        "row": 45,
+        "col": "Unnamed: 15"
+      },
+      "calculate": {
+        "row": 45,
+        "col": "Unnamed: 16"
+      },
+      "note": {
+        "row": 45,
+        "col": "Unnamed: 19"
+      }
+    },
+    "second_row": {
+      "ratios_text": {
+        "row": 46,
+        "col": "Unnamed: 11"
+      },
+      "ratios_suc": {
+        "row": 46,
+        "col": "Unnamed: 17"
+      },
+      "ratios_attemp": {
+        "row": 46,
+        "col": "Unnamed: 18"
+      },
+      "calculate": {
+        "row": 46,
+        "col": "Unnamed: 16"
+      },
+      "note": {
+        "row": 46,
+        "col": "Unnamed: 19"
+      }
+    }
+  },
+  {
+    "item_text": {
+      "row": 47,
+      "col": "Unnamed: 1"
+    },
+    "first_row": {
+      "ratios_text": {
+        "row": 47,
+        "col": "Unnamed: 11"
+      },
+      "ratios_suc": {
+        "row": 47,
+        "col": "Unnamed: 14"
+      },
+      "ratios_attemp": {
+        "row": 47,
+        "col": "Unnamed: 15"
+      },
+      "calculate": {
+        "row": 47,
+        "col": "Unnamed: 16"
+      },
+      "note": {
+        "row": 47,
+        "col": "Unnamed: 19"
+      }
+    },
+    "second_row": {
+      "ratios_text": {
+        "row": 48,
+        "col": "Unnamed: 11"
+      },
+      "ratios_suc": {
+        "row": 48,
+        "col": "Unnamed: 17"
+      },
+      "ratios_attemp": {
+        "row": 48,
+        "col": "Unnamed: 18"
+      },
+      "calculate": {
+        "row": 48,
+        "col": "Unnamed: 16"
+      },
+      "note": {
+        "row": 48,
+        "col": "Unnamed: 19"
+      }
+    }
+  },
+  {
+    "item_text": {
+      "row": 49,
+      "col": "Unnamed: 1"
+    },
+    "first_row": {
+      "ratios_text": {
+        "row": 49,
+        "col": "Unnamed: 11"
+      },
+      "ratios_suc": {
+        "row": 49,
+        "col": "Unnamed: 14"
+      },
+      "ratios_attemp": {
+        "row": 49,
+        "col": "Unnamed: 15"
+      },
+      "calculate": {
+        "row": 49,
+        "col": "Unnamed: 16"
+      },
+      "note": {
+        "row": 49,
+        "col": "Unnamed: 19"
+      }
+    },
+    "second_row": {
+      "ratios_text": {
+        "row": 50,
+        "col": "Unnamed: 11"
+      },
+      "ratios_suc": {
+        "row": 50,
+        "col": "Unnamed: 17"
+      },
+      "ratios_attemp": {
+        "row": 50,
+        "col": "Unnamed: 18"
+      },
+      "calculate": {
+        "row": 50,
+        "col": "Unnamed: 16"
+      },
+      "note": {
+        "row": 50,
+        "col": "Unnamed: 19"
+      }
+    }
+  },
+  {
+    "item_text": {
+      "row": 51,
+      "col": "Unnamed: 1"
+    },
+    "first_row": {
+      "ratios_text": {
+        "row": 51,
+        "col": "Unnamed: 11"
+      },
+      "ratios_suc": {
+        "row": 51,
+        "col": "Unnamed: 14"
+      },
+      "ratios_attemp": {
+        "row": 51,
+        "col": "Unnamed: 15"
+      },
+      "calculate": {
+        "row": 51,
+        "col": "Unnamed: 16"
+      },
+      "note": {
+        "row": 51,
+        "col": "Unnamed: 19"
+      }
+    },
+    "second_row": {
+      "ratios_text": {
+        "row": 52,
+        "col": "Unnamed: 11"
+      },
+      "ratios_suc": {
+        "row": 52,
+        "col": "Unnamed: 17"
+      },
+      "ratios_attemp": {
+        "row": 52,
+        "col": "Unnamed: 18"
+      },
+      "calculate": {
+        "row": 52,
+        "col": "Unnamed: 16"
+      },
+      "note": {
+        "row": 52,
+        "col": "Unnamed: 19"
+      }
+    }
+  },
+  {
+    "item_text": {
+      "row": 53,
+      "col": "Unnamed: 1"
+    },
+    "first_row": {
+      "ratios_text": {
+        "row": 53,
+        "col": "Unnamed: 11"
+      },
+      "ratios_suc": {
+        "row": 53,
+        "col": "Unnamed: 14"
+      },
+      "ratios_attemp": {
+        "row": 53,
+        "col": "Unnamed: 15"
+      },
+      "calculate": {
+        "row": 53,
+        "col": "Unnamed: 16"
+      },
+      "note": {
+        "row": 53,
+        "col": "Unnamed: 19"
+      }
+    },
+    "second_row": {
+      "ratios_text": {
+        "row": 54,
+        "col": "Unnamed: 11"
+      },
+      "ratios_suc": {
+        "row": 54,
+        "col": "Unnamed: 17"
+      },
+      "ratios_attemp": {
+        "row": 54,
+        "col": "Unnamed: 18"
+      },
+      "calculate": {
+        "row": 54,
+        "col": "Unnamed: 16"
+      },
+      "note": {
+        "row": 54,
+        "col": "Unnamed: 19"
+      }
+    }
+  },
+  {
+    "item_text": {
+      "row": 55,
+      "col": "Unnamed: 1"
+    },
+    "first_row": {
+      "ratios_text": {
+        "row": 55,
+        "col": "Unnamed: 11"
+      },
+      "ratios_suc": {
+        "row": 55,
+        "col": "Unnamed: 14"
+      },
+      "ratios_attemp": {
+        "row": 55,
+        "col": "Unnamed: 15"
+      },
+      "calculate": {
+        "row": 55,
+        "col": "Unnamed: 16"
+      },
+      "note": {
+        "row": 55,
+        "col": "Unnamed: 19"
+      }
+    },
+    "second_row": {
+      "ratios_text": {
+        "row": 56,
+        "col": "Unnamed: 11"
+      },
+      "ratios_suc": {
+        "row": 56,
+        "col": "Unnamed: 17"
+      },
+      "ratios_attemp": {
+        "row": 56,
+        "col": "Unnamed: 18"
+      },
+      "calculate": {
+        "row": 56,
+        "col": "Unnamed: 16"
+      },
+      "note": {
+        "row": 56,
+        "col": "Unnamed: 19"
+      }
+    }
+  },
+  {
+    "item_text": {
+      "row": 57,
+      "col": "Unnamed: 1"
+    },
+    "first_row": {
+      "ratios_text": {
+        "row": 57,
+        "col": "Unnamed: 11"
+      },
+      "ratios_suc": {
+        "row": 57,
+        "col": "Unnamed: 14"
+      },
+      "ratios_attemp": {
+        "row": 57,
+        "col": "Unnamed: 15"
+      },
+      "calculate": {
+        "row": 57,
+        "col": "Unnamed: 16"
+      },
+      "note": {
+        "row": 57,
+        "col": "Unnamed: 19"
+      }
+    },
+    "second_row": {
+      "ratios_text": {
+        "row": 58,
+        "col": "Unnamed: 11"
+      },
+      "ratios_suc": {
+        "row": 58,
+        "col": "Unnamed: 17"
+      },
+      "ratios_attemp": {
+        "row": 58,
+        "col": "Unnamed: 18"
+      },
+      "calculate": {
+        "row": 58,
+        "col": "Unnamed: 16"
+      },
+      "note": {
+        "row": 58,
+        "col": "Unnamed: 19"
+      }
+    }
+  },
+  {
+    "item_text": {
+      "row": 59,
+      "col": "Unnamed: 1"
+    },
+    "first_row": {
+      "ratios_text": {
+        "row": 59,
+        "col": "Unnamed: 11"
+      },
+      "ratios_suc": {
+        "row": 59,
+        "col": "Unnamed: 14"
+      },
+      "ratios_attemp": {
+        "row": 59,
+        "col": "Unnamed: 15"
+      },
+      "calculate": {
+        "row": 59,
+        "col": "Unnamed: 16"
+      },
+      "note": {
+        "row": 59,
+        "col": "Unnamed: 19"
+      }
+    },
+    "second_row": {
+      "ratios_text": {
+        "row": 60,
+        "col": "Unnamed: 11"
+      },
+      "ratios_suc": {
+        "row": 60,
+        "col": "Unnamed: 17"
+      },
+      "ratios_attemp": {
+        "row": 60,
+        "col": "Unnamed: 18"
+      },
+      "calculate": {
+        "row": 60,
+        "col": "Unnamed: 16"
+      },
+      "note": {
+        "row": 60,
+        "col": "Unnamed: 19"
+      }
+    }
+  },
+  {
+    "item_text": {
+      "row": 61,
+      "col": "Unnamed: 1"
+    },
+    "first_row": {
+      "ratios_text": {
+        "row": 61,
+        "col": "Unnamed: 11"
+      },
+      "ratios_suc": {
+        "row": 61,
+        "col": "Unnamed: 14"
+      },
+      "ratios_attemp": {
+        "row": 61,
+        "col": "Unnamed: 15"
+      },
+      "calculate": {
+        "row": 61,
+        "col": "Unnamed: 16"
+      },
+      "note": {
+        "row": 61,
+        "col": "Unnamed: 19"
+      }
+    },
+    "second_row": {
+      "ratios_text": {
+        "row": 62,
+        "col": "Unnamed: 11"
+      },
+      "ratios_suc": {
+        "row": 62,
+        "col": "Unnamed: 17"
+      },
+      "ratios_attemp": {
+        "row": 62,
+        "col": "Unnamed: 18"
+      },
+      "calculate": {
+        "row": 62,
+        "col": "Unnamed: 16"
+      },
+      "note": {
+        "row": 62,
+        "col": "Unnamed: 19"
+      }
+    }
+  },
+  {
+    "item_text": {
+      "row": 63,
+      "col": "Unnamed: 1"
+    },
+    "first_row": {
+      "ratios_text": {
+        "row": 63,
+        "col": "Unnamed: 11"
+      },
+      "ratios_suc": {
+        "row": 63,
+        "col": "Unnamed: 14"
+      },
+      "ratios_attemp": {
+        "row": 63,
+        "col": "Unnamed: 15"
+      },
+      "calculate": {
+        "row": 63,
+        "col": "Unnamed: 16"
+      },
+      "note": {
+        "row": 63,
+        "col": "Unnamed: 19"
+      }
+    },
+    "second_row": {
+      "ratios_text": {
+        "row": 64,
+        "col": "Unnamed: 11"
+      },
+      "ratios_suc": {
+        "row": 64,
+        "col": "Unnamed: 17"
+      },
+      "ratios_attemp": {
+        "row": 64,
+        "col": "Unnamed: 18"
+      },
+      "calculate": {
+        "row": 64,
+        "col": "Unnamed: 16"
+      },
+      "note": {
+        "row": 64,
+        "col": "Unnamed: 19"
+      }
+    }
+  },
+  {
+    "item_text": {
+      "row": 65,
+      "col": "Unnamed: 1"
+    },
+    "first_row": {
+      "ratios_text": {
+        "row": 65,
+        "col": "Unnamed: 11"
+      },
+      "ratios_suc": {
+        "row": 65,
+        "col": "Unnamed: 14"
+      },
+      "ratios_attemp": {
+        "row": 65,
+        "col": "Unnamed: 15"
+      },
+      "calculate": {
+        "row": 65,
+        "col": "Unnamed: 16"
+      },
+      "note": {
+        "row": 65,
+        "col": "Unnamed: 19"
+      }
+    },
+    "second_row": {
+      "ratios_text": {
+        "row": 66,
+        "col": "Unnamed: 11"
+      },
+      "ratios_suc": {
+        "row": 66,
+        "col": "Unnamed: 17"
+      },
+      "ratios_attemp": {
+        "row": 66,
+        "col": "Unnamed: 18"
+      },
+      "calculate": {
+        "row": 66,
+        "col": "Unnamed: 16"
+      },
+      "note": {
+        "row": 66,
+        "col": "Unnamed: 19"
+      }
+    }
+  },
+  {
+    "item_text": {
+      "row": 67,
+      "col": "Unnamed: 1"
+    },
+    "first_row": {
+      "ratios_text": {
+        "row": 67,
+        "col": "Unnamed: 11"
+      },
+      "ratios_suc": {
+        "row": 67,
+        "col": "Unnamed: 14"
+      },
+      "ratios_attemp": {
+        "row": 67,
+        "col": "Unnamed: 15"
+      },
+      "calculate": {
+        "row": 67,
+        "col": "Unnamed: 16"
+      },
+      "note": {
+        "row": 67,
+        "col": "Unnamed: 19"
+      }
+    },
+    "second_row": {
+      "ratios_text": {
+        "row": 68,
+        "col": "Unnamed: 11"
+      },
+      "ratios_suc": {
+        "row": 68,
+        "col": "Unnamed: 17"
+      },
+      "ratios_attemp": {
+        "row": 68,
+        "col": "Unnamed: 18"
+      },
+      "calculate": {
+        "row": 68,
+        "col": "Unnamed: 16"
+      },
+      "note": {
+        "row": 68,
+        "col": "Unnamed: 19"
+      }
+    }
+  },
+  {
+    "item_text": {
+      "row": 69,
+      "col": "Unnamed: 1"
+    },
+    "first_row": {
+      "ratios_text": {
+        "row": 69,
+        "col": "Unnamed: 11"
+      },
+      "ratios_suc": {
+        "row": 69,
+        "col": "Unnamed: 14"
+      },
+      "ratios_attemp": {
+        "row": 69,
+        "col": "Unnamed: 15"
+      },
+      "calculate": {
+        "row": 69,
+        "col": "Unnamed: 16"
+      },
+      "note": {
+        "row": 69,
+        "col": "Unnamed: 19"
+      }
+    },
+    "second_row": {
+      "ratios_text": {
+        "row": 70,
+        "col": "Unnamed: 11"
+      },
+      "ratios_suc": {
+        "row": 70,
+        "col": "Unnamed: 17"
+      },
+      "ratios_attemp": {
+        "row": 70,
+        "col": "Unnamed: 18"
+      },
+      "calculate": {
+        "row": 70,
+        "col": "Unnamed: 16"
+      },
+      "note": {
+        "row": 70,
+        "col": "Unnamed: 19"
+      }
+    }
+  },
+  {
+    "item_text": {
+      "row": 71,
+      "col": "Unnamed: 1"
+    },
+    "first_row": {
+      "ratios_text": {
+        "row": 71,
+        "col": "Unnamed: 11"
+      },
+      "ratios_suc": {
+        "row": 71,
+        "col": "Unnamed: 14"
+      },
+      "ratios_attemp": {
+        "row": 71,
+        "col": "Unnamed: 15"
+      },
+      "calculate": {
+        "row": 71,
+        "col": "Unnamed: 16"
+      },
+      "note": {
+        "row": 71,
+        "col": "Unnamed: 19"
+      }
+    },
+    "second_row": {
+      "ratios_text": {
+        "row": 72,
+        "col": "Unnamed: 11"
+      },
+      "ratios_suc": {
+        "row": 72,
+        "col": "Unnamed: 17"
+      },
+      "ratios_attemp": {
+        "row": 72,
+        "col": "Unnamed: 18"
+      },
+      "calculate": {
+        "row": 72,
+        "col": "Unnamed: 16"
+      },
+      "note": {
+        "row": 72,
+        "col": "Unnamed: 19"
+      }
+    }
+  },
+  {
+    "item_text": {
+      "row": 73,
+      "col": "Unnamed: 1"
+    },
+    "first_row": {
+      "ratios_text": {
+        "row": 73,
+        "col": "Unnamed: 11"
+      },
+      "ratios_suc": {
+        "row": 73,
+        "col": "Unnamed: 14"
+      },
+      "ratios_attemp": {
+        "row": 73,
+        "col": "Unnamed: 15"
+      },
+      "calculate": {
+        "row": 73,
+        "col": "Unnamed: 16"
+      },
+      "note": {
+        "row": 73,
+        "col": "Unnamed: 19"
+      }
+    },
+    "second_row": {
+      "ratios_text": {
+        "row": 74,
+        "col": "Unnamed: 11"
+      },
+      "ratios_suc": {
+        "row": 74,
+        "col": "Unnamed: 17"
+      },
+      "ratios_attemp": {
+        "row": 74,
+        "col": "Unnamed: 18"
+      },
+      "calculate": {
+        "row": 74,
+        "col": "Unnamed: 16"
+      },
+      "note": {
+        "row": 74,
+        "col": "Unnamed: 19"
+      }
+    }
+  },
+  {
+    "item_text": {
+      "row": 75,
+      "col": "Unnamed: 1"
+    },
+    "first_row": {
+      "ratios_text": {
+        "row": 75,
+        "col": "Unnamed: 11"
+      },
+      "ratios_suc": {
+        "row": 75,
+        "col": "Unnamed: 14"
+      },
+      "ratios_attemp": {
+        "row": 75,
+        "col": "Unnamed: 15"
+      },
+      "calculate": {
+        "row": 75,
+        "col": "Unnamed: 16"
+      },
+      "note": {
+        "row": 75,
+        "col": "Unnamed: 19"
+      }
+    },
+    "second_row": {
+      "ratios_text": {
+        "row": 76,
+        "col": "Unnamed: 11"
+      },
+      "ratios_suc": {
+        "row": 76,
+        "col": "Unnamed: 17"
+      },
+      "ratios_attemp": {
+        "row": 76,
+        "col": "Unnamed: 18"
+      },
+      "calculate": {
+        "row": 76,
+        "col": "Unnamed: 16"
+      },
+      "note": {
+        "row": 76,
+        "col": "Unnamed: 19"
+      }
+    }
+  },
+  {
+    "item_text": {
+      "row": 83,
+      "col": "Unnamed: 1"
+    },
+    "first_row": {
+      "ratios_text": {
+        "row": 83,
+        "col": "Unnamed: 11"
+      },
+      "ratios_suc": {
+        "row": 83,
+        "col": "Unnamed: 14"
+      },
+      "ratios_attemp": {
+        "row": 83,
+        "col": "Unnamed: 15"
+      },
+      "calculate": {
+        "row": 83,
+        "col": "Unnamed: 16"
+      },
+      "note": {
+        "row": 83,
+        "col": "Unnamed: 19"
+      }
+    },
+    "second_row": {
+      "ratios_text": {
+        "row": 84,
+        "col": "Unnamed: 11"
+      },
+      "ratios_suc": {
+        "row": 84,
+        "col": "Unnamed: 17"
+      },
+      "ratios_attemp": {
+        "row": 84,
+        "col": "Unnamed: 18"
+      },
+      "calculate": {
+        "row": 84,
+        "col": "Unnamed: 16"
+      },
+      "note": {
+        "row": 84,
+        "col": "Unnamed: 19"
+      }
+    }
+  },
+  {
+    "item_text": {
+      "row": 85,
+      "col": "Unnamed: 1"
+    },
+    "first_row": {
+      "ratios_text": {
+        "row": 85,
+        "col": "Unnamed: 11"
+      },
+      "ratios_suc": {
+        "row": 85,
+        "col": "Unnamed: 14"
+      },
+      "ratios_attemp": {
+        "row": 85,
+        "col": "Unnamed: 15"
+      },
+      "calculate": {
+        "row": 85,
+        "col": "Unnamed: 16"
+      },
+      "note": {
+        "row": 85,
+        "col": "Unnamed: 19"
+      }
+    },
+    "second_row": {
+      "ratios_text": {
+        "row": 86,
+        "col": "Unnamed: 11"
+      },
+      "ratios_suc": {
+        "row": 86,
+        "col": "Unnamed: 17"
+      },
+      "ratios_attemp": {
+        "row": 86,
+        "col": "Unnamed: 18"
+      },
+      "calculate": {
+        "row": 86,
+        "col": "Unnamed: 16"
+      },
+      "note": {
+        "row": 86,
+        "col": "Unnamed: 19"
+      }
+    }
+  },
+  {
+    "item_text": {
+      "row": 87,
+      "col": "Unnamed: 1"
+    },
+    "first_row": {
+      "ratios_text": {
+        "row": 87,
+        "col": "Unnamed: 11"
+      },
+      "ratios_suc": {
+        "row": 87,
+        "col": "Unnamed: 14"
+      },
+      "ratios_attemp": {
+        "row": 87,
+        "col": "Unnamed: 15"
+      },
+      "calculate": {
+        "row": 87,
+        "col": "Unnamed: 16"
+      },
+      "note": {
+        "row": 87,
+        "col": "Unnamed: 19"
+      }
+    },
+    "second_row": {
+      "ratios_text": {
+        "row": 88,
+        "col": "Unnamed: 11"
+      },
+      "ratios_suc": {
+        "row": 88,
+        "col": "Unnamed: 17"
+      },
+      "ratios_attemp": {
+        "row": 88,
+        "col": "Unnamed: 18"
+      },
+      "calculate": {
+        "row": 88,
+        "col": "Unnamed: 16"
+      },
+      "note": {
+        "row": 88,
+        "col": "Unnamed: 19"
+      }
+    }
+  },
+  {
+    "item_text": {
+      "row": 89,
+      "col": "Unnamed: 1"
+    },
+    "first_row": {
+      "ratios_text": {
+        "row": 89,
+        "col": "Unnamed: 11"
+      },
+      "ratios_suc": {
+        "row": 89,
+        "col": "Unnamed: 14"
+      },
+      "ratios_attemp": {
+        "row": 89,
+        "col": "Unnamed: 15"
+      },
+      "calculate": {
+        "row": 89,
+        "col": "Unnamed: 16"
+      },
+      "note": {
+        "row": 89,
+        "col": "Unnamed: 19"
+      }
+    },
+    "second_row": {
+      "ratios_text": {
+        "row": 90,
+        "col": "Unnamed: 11"
+      },
+      "ratios_suc": {
+        "row": 90,
+        "col": "Unnamed: 17"
+      },
+      "ratios_attemp": {
+        "row": 90,
+        "col": "Unnamed: 18"
+      },
+      "calculate": {
+        "row": 90,
+        "col": "Unnamed: 16"
+      },
+      "note": {
+        "row": 90,
+        "col": "Unnamed: 19"
+      }
+    }
+  },
+  {
+    "item_text": {
+      "row": 91,
+      "col": "Unnamed: 1"
+    },
+    "first_row": {
+      "ratios_text": {
+        "row": 91,
+        "col": "Unnamed: 11"
+      },
+      "ratios_suc": {
+        "row": 91,
+        "col": "Unnamed: 14"
+      },
+      "ratios_attemp": {
+        "row": 91,
+        "col": "Unnamed: 15"
+      },
+      "calculate": {
+        "row": 91,
+        "col": "Unnamed: 16"
+      },
+      "note": {
+        "row": 91,
+        "col": "Unnamed: 19"
+      }
+    },
+    "second_row": {
+      "ratios_text": {
+        "row": 92,
+        "col": "Unnamed: 11"
+      },
+      "ratios_suc": {
+        "row": 92,
+        "col": "Unnamed: 17"
+      },
+      "ratios_attemp": {
+        "row": 92,
+        "col": "Unnamed: 18"
+      },
+      "calculate": {
+        "row": 92,
+        "col": "Unnamed: 16"
+      },
+      "note": {
+        "row": 92,
+        "col": "Unnamed: 19"
+      }
+    }
+  },
+  {
+    "item_text": {
+      "row": 93,
+      "col": "Unnamed: 1"
+    },
+    "first_row": {
+      "ratios_text": {
+        "row": 93,
+        "col": "Unnamed: 11"
+      },
+      "ratios_suc": {
+        "row": 93,
+        "col": "Unnamed: 14"
+      },
+      "ratios_attemp": {
+        "row": 93,
+        "col": "Unnamed: 15"
+      },
+      "calculate": {
+        "row": 93,
+        "col": "Unnamed: 16"
+      },
+      "note": {
+        "row": 93,
+        "col": "Unnamed: 19"
+      }
+    },
+    "second_row": {
+      "ratios_text": {
+        "row": 94,
+        "col": "Unnamed: 11"
+      },
+      "ratios_suc": {
+        "row": 94,
+        "col": "Unnamed: 17"
+      },
+      "ratios_attemp": {
+        "row": 94,
+        "col": "Unnamed: 18"
+      },
+      "calculate": {
+        "row": 94,
+        "col": "Unnamed: 16"
+      },
+      "note": {
+        "row": 94,
+        "col": "Unnamed: 19"
+      }
+    }
+  },
+  {
+    "item_text": {
+      "row": 95,
+      "col": "Unnamed: 1"
+    },
+    "first_row": {
+      "ratios_text": {
+        "row": 95,
+        "col": "Unnamed: 11"
+      },
+      "ratios_suc": {
+        "row": 95,
+        "col": "Unnamed: 14"
+      },
+      "ratios_attemp": {
+        "row": 95,
+        "col": "Unnamed: 15"
+      },
+      "calculate": {
+        "row": 95,
+        "col": "Unnamed: 16"
+      },
+      "note": {
+        "row": 95,
+        "col": "Unnamed: 19"
+      }
+    },
+    "second_row": {
+      "ratios_text": {
+        "row": 96,
+        "col": "Unnamed: 11"
+      },
+      "ratios_suc": {
+        "row": 96,
+        "col": "Unnamed: 17"
+      },
+      "ratios_attemp": {
+        "row": 96,
+        "col": "Unnamed: 18"
+      },
+      "calculate": {
+        "row": 96,
+        "col": "Unnamed: 16"
+      },
+      "note": {
+        "row": 96,
+        "col": "Unnamed: 19"
+      }
+    }
+  },
+  {
+    "item_text": {
+      "row": 97,
+      "col": "Unnamed: 1"
+    },
+    "first_row": {
+      "ratios_text": {
+        "row": 97,
+        "col": "Unnamed: 11"
+      },
+      "ratios_suc": {
+        "row": 97,
+        "col": "Unnamed: 14"
+      },
+      "ratios_attemp": {
+        "row": 97,
+        "col": "Unnamed: 15"
+      },
+      "calculate": {
+        "row": 97,
+        "col": "Unnamed: 16"
+      },
+      "note": {
+        "row": 97,
+        "col": "Unnamed: 19"
+      }
+    },
+    "second_row": {
+      "ratios_text": {
+        "row": 98,
+        "col": "Unnamed: 11"
+      },
+      "ratios_suc": {
+        "row": 98,
+        "col": "Unnamed: 17"
+      },
+      "ratios_attemp": {
+        "row": 98,
+        "col": "Unnamed: 18"
+      },
+      "calculate": {
+        "row": 98,
+        "col": "Unnamed: 16"
+      },
+      "note": {
+        "row": 98,
+        "col": "Unnamed: 19"
+      }
+    }
+  },
+  {
+    "item_text": {
+      "row": 99,
+      "col": "Unnamed: 1"
+    },
+    "first_row": {
+      "ratios_text": {
+        "row": 99,
+        "col": "Unnamed: 11"
+      },
+      "ratios_suc": {
+        "row": 99,
+        "col": "Unnamed: 14"
+      },
+      "ratios_attemp": {
+        "row": 99,
+        "col": "Unnamed: 15"
+      },
+      "calculate": {
+        "row": 99,
+        "col": "Unnamed: 16"
+      },
+      "note": {
+        "row": 99,
+        "col": "Unnamed: 19"
+      }
+    },
+    "second_row": {
+      "ratios_text": {
+        "row": 100,
+        "col": "Unnamed: 11"
+      },
+      "ratios_suc": {
+        "row": 100,
+        "col": "Unnamed: 17"
+      },
+      "ratios_attemp": {
+        "row": 100,
+        "col": "Unnamed: 18"
+      },
+      "calculate": {
+        "row": 100,
+        "col": "Unnamed: 16"
+      },
+      "note": {
+        "row": 100,
+        "col": "Unnamed: 19"
+      }
+    }
+  },
+  {
+    "item_text": {
+      "row": 101,
+      "col": "Unnamed: 1"
+    },
+    "first_row": {
+      "ratios_text": {
+        "row": 101,
+        "col": "Unnamed: 11"
+      },
+      "ratios_suc": {
+        "row": 101,
+        "col": "Unnamed: 14"
+      },
+      "ratios_attemp": {
+        "row": 101,
+        "col": "Unnamed: 15"
+      },
+      "calculate": {
+        "row": 101,
+        "col": "Unnamed: 16"
+      },
+      "note": {
+        "row": 101,
+        "col": "Unnamed: 19"
+      }
+    },
+    "second_row": {
+      "ratios_text": {
+        "row": 102,
+        "col": "Unnamed: 11"
+      },
+      "ratios_suc": {
+        "row": 102,
+        "col": "Unnamed: 17"
+      },
+      "ratios_attemp": {
+        "row": 102,
+        "col": "Unnamed: 18"
+      },
+      "calculate": {
+        "row": 102,
+        "col": "Unnamed: 16"
+      },
+      "note": {
+        "row": 102,
+        "col": "Unnamed: 19"
+      }
+    }
+  },
+  {
+    "item_text": {
+      "row": 103,
+      "col": "Unnamed: 1"
+    },
+    "first_row": {
+      "ratios_text": {
+        "row": 103,
+        "col": "Unnamed: 11"
+      },
+      "ratios_suc": {
+        "row": 103,
+        "col": "Unnamed: 14"
+      },
+      "ratios_attemp": {
+        "row": 103,
+        "col": "Unnamed: 15"
+      },
+      "calculate": {
+        "row": 103,
+        "col": "Unnamed: 16"
+      },
+      "note": {
+        "row": 103,
+        "col": "Unnamed: 19"
+      }
+    },
+    "second_row": {
+      "ratios_text": {
+        "row": 104,
+        "col": "Unnamed: 11"
+      },
+      "ratios_suc": {
+        "row": 104,
+        "col": "Unnamed: 17"
+      },
+      "ratios_attemp": {
+        "row": 104,
+        "col": "Unnamed: 18"
+      },
+      "calculate": {
+        "row": 104,
+        "col": "Unnamed: 16"
+      },
+      "note": {
+        "row": 104,
+        "col": "Unnamed: 19"
+      }
+    }
+  },
+  {
+    "item_text": {
+      "row": 105,
+      "col": "Unnamed: 1"
+    },
+    "first_row": {
+      "ratios_text": {
+        "row": 105,
+        "col": "Unnamed: 11"
+      },
+      "ratios_suc": {
+        "row": 105,
+        "col": "Unnamed: 14"
+      },
+      "ratios_attemp": {
+        "row": 105,
+        "col": "Unnamed: 15"
+      },
+      "calculate": {
+        "row": 105,
+        "col": "Unnamed: 16"
+      },
+      "note": {
+        "row": 105,
+        "col": "Unnamed: 19"
+      }
+    },
+    "second_row": {
+      "ratios_text": {
+        "row": 106,
+        "col": "Unnamed: 11"
+      },
+      "ratios_suc": {
+        "row": 106,
+        "col": "Unnamed: 17"
+      },
+      "ratios_attemp": {
+        "row": 106,
+        "col": "Unnamed: 18"
+      },
+      "calculate": {
+        "row": 106,
+        "col": "Unnamed: 16"
+      },
+      "note": {
+        "row": 106,
+        "col": "Unnamed: 19"
+      }
+    }
+  },
+  {
+    "item_text": {
+      "row": 107,
+      "col": "Unnamed: 1"
+    },
+    "first_row": {
+      "ratios_text": {
+        "row": 107,
+        "col": "Unnamed: 11"
+      },
+      "ratios_suc": {
+        "row": 107,
+        "col": "Unnamed: 14"
+      },
+      "ratios_attemp": {
+        "row": 107,
+        "col": "Unnamed: 15"
+      },
+      "calculate": {
+        "row": 107,
+        "col": "Unnamed: 16"
+      },
+      "note": {
+        "row": 107,
+        "col": "Unnamed: 19"
+      }
+    },
+    "second_row": {
+      "ratios_text": {
+        "row": 108,
+        "col": "Unnamed: 11"
+      },
+      "ratios_suc": {
+        "row": 108,
+        "col": "Unnamed: 17"
+      },
+      "ratios_attemp": {
+        "row": 108,
+        "col": "Unnamed: 18"
+      },
+      "calculate": {
+        "row": 108,
+        "col": "Unnamed: 16"
+      },
+      "note": {
+        "row": 108,
+        "col": "Unnamed: 19"
+      }
+    }
+  },
+  {
+    "item_text": {
+      "row": 109,
+      "col": "Unnamed: 1"
+    },
+    "first_row": {
+      "ratios_text": {
+        "row": 109,
+        "col": "Unnamed: 11"
+      },
+      "ratios_suc": {
+        "row": 109,
+        "col": "Unnamed: 14"
+      },
+      "ratios_attemp": {
+        "row": 109,
+        "col": "Unnamed: 15"
+      },
+      "calculate": {
+        "row": 109,
+        "col": "Unnamed: 16"
+      },
+      "note": {
+        "row": 109,
+        "col": "Unnamed: 19"
+      }
+    },
+    "second_row": {
+      "ratios_text": {
+        "row": 110,
+        "col": "Unnamed: 11"
+      },
+      "ratios_suc": {
+        "row": 110,
+        "col": "Unnamed: 17"
+      },
+      "ratios_attemp": {
+        "row": 110,
+        "col": "Unnamed: 18"
+      },
+      "calculate": {
+        "row": 110,
+        "col": "Unnamed: 16"
+      },
+      "note": {
+        "row": 110,
+        "col": "Unnamed: 19"
+      }
+    }
+  },
+  {
+    "item_text": {
+      "row": 111,
+      "col": "Unnamed: 1"
+    },
+    "first_row": {
+      "ratios_text": {
+        "row": 111,
+        "col": "Unnamed: 11"
+      },
+      "ratios_suc": {
+        "row": 111,
+        "col": "Unnamed: 14"
+      },
+      "ratios_attemp": {
+        "row": 111,
+        "col": "Unnamed: 15"
+      },
+      "calculate": {
+        "row": 111,
+        "col": "Unnamed: 16"
+      },
+      "note": {
+        "row": 111,
+        "col": "Unnamed: 19"
+      }
+    },
+    "second_row": {
+      "ratios_text": {
+        "row": 112,
+        "col": "Unnamed: 11"
+      },
+      "ratios_suc": {
+        "row": 112,
+        "col": "Unnamed: 17"
+      },
+      "ratios_attemp": {
+        "row": 112,
+        "col": "Unnamed: 18"
+      },
+      "calculate": {
+        "row": 112,
+        "col": "Unnamed: 16"
+      },
+      "note": {
+        "row": 112,
+        "col": "Unnamed: 19"
+      }
+    }
+  },
+  {
+    "item_text": {
+      "row": 113,
+      "col": "Unnamed: 1"
+    },
+    "first_row": {
+      "ratios_text": {
+        "row": 113,
+        "col": "Unnamed: 11"
+      },
+      "ratios_suc": {
+        "row": 113,
+        "col": "Unnamed: 14"
+      },
+      "ratios_attemp": {
+        "row": 113,
+        "col": "Unnamed: 15"
+      },
+      "calculate": {
+        "row": 113,
+        "col": "Unnamed: 16"
+      },
+      "note": {
+        "row": 113,
+        "col": "Unnamed: 19"
+      }
+    },
+    "second_row": {
+      "ratios_text": {
+        "row": 114,
+        "col": "Unnamed: 11"
+      },
+      "ratios_suc": {
+        "row": 114,
+        "col": "Unnamed: 17"
+      },
+      "ratios_attemp": {
+        "row": 114,
+        "col": "Unnamed: 18"
+      },
+      "calculate": {
+        "row": 114,
+        "col": "Unnamed: 16"
+      },
+      "note": {
+        "row": 114,
+        "col": "Unnamed: 19"
+      }
+    }
+  },
+  {
+    "item_text": {
+      "row": 115,
+      "col": "Unnamed: 1"
+    },
+    "first_row": {
+      "ratios_text": {
+        "row": 115,
+        "col": "Unnamed: 11"
+      },
+      "ratios_suc": {
+        "row": 115,
+        "col": "Unnamed: 14"
+      },
+      "ratios_attemp": {
+        "row": 115,
+        "col": "Unnamed: 15"
+      },
+      "calculate": {
+        "row": 115,
+        "col": "Unnamed: 16"
+      },
+      "note": {
+        "row": 115,
+        "col": "Unnamed: 19"
+      }
+    },
+    "second_row": {
+      "ratios_text": {
+        "row": 116,
+        "col": "Unnamed: 11"
+      },
+      "ratios_suc": {
+        "row": 116,
+        "col": "Unnamed: 17"
+      },
+      "ratios_attemp": {
+        "row": 116,
+        "col": "Unnamed: 18"
+      },
+      "calculate": {
+        "row": 116,
+        "col": "Unnamed: 16"
+      },
+      "note": {
+        "row": 116,
+        "col": "Unnamed: 19"
+      }
+    }
+  }
+]
