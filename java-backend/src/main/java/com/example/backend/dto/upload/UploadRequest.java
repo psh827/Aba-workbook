@@ -13,6 +13,7 @@ public class UploadRequest {
     private Map<String, Object> treatment_information;
     private Map<String, Object> programs_result;
     private Map<String, Object> protests_results;
+    private Map<String, Object> maintenance;
     private String folder;
     private String message;
 }

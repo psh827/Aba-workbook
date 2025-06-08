@@ -20,14 +20,14 @@ def extract_maintenance_info(info, data):
                 "first": {
                     "ratios_text": get_cell(data, block["first_row"]["ratios_text"]["row"], block["first_row"]["ratios_text"]["col"]),
                     "ratios_suc": get_cell(data, block["first_row"]["ratios_suc"]["row"], block["first_row"]["ratios_suc"]["col"]),
-                    "ratios_attemp": get_cell(data, block["first_row"]["ratios_attemp"]["row"], block["first_row"]["ratios_attemp"]["col"]),
+                    "ratios_attempt": get_cell(data, block["first_row"]["ratios_attempt"]["row"], block["first_row"]["ratios_attempt"]["col"]),
                     "calculate": get_cell(data, block["first_row"]["calculate"]["row"], block["first_row"]["calculate"]["col"]),
                     "note": get_cell(data, block["first_row"]["note"]["row"], block["first_row"]["note"]["col"])
                 },
                 "second": {
                     "ratios_text": get_cell(data, block["second_row"]["ratios_text"]["row"], block["second_row"]["ratios_text"]["col"]),
                     "ratios_suc": get_cell(data, block["second_row"]["ratios_suc"]["row"], block["second_row"]["ratios_suc"]["col"]),
-                    "ratios_attemp": get_cell(data, block["second_row"]["ratios_attemp"]["row"], block["second_row"]["ratios_attemp"]["col"]),
+                    "ratios_attempt": get_cell(data, block["second_row"]["ratios_attempt"]["row"], block["second_row"]["ratios_attempt"]["col"]),
                     "calculate": get_cell(data, block["second_row"]["calculate"]["row"], block["second_row"]["calculate"]["col"]),
                     "note": get_cell(data, block["second_row"]["note"]["row"], block["second_row"]["note"]["col"])
                 }

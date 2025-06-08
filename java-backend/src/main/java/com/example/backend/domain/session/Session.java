@@ -40,6 +40,7 @@ public class Session {
     @Column
     private Integer schoolTrainingSessions = 0;
 
+    @Column(name = "created_at", nullable = false, updatable = false)
     @CreationTimestamp
     private LocalDateTime createdAt;
 }
