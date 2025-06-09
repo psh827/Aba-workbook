@@ -24,10 +24,7 @@ public class PromptingNote {
     private String hierarchyId;  // 상위 촉구 프로그램 ID
 
     @Column(nullable = false)
-    private Long itemId;  // 프로그램 항목 ID
-
-    @Column(nullable = false)
-    private LocalDate noteDate;  // 메모 발생일자
+    private Long stepId;  // 프로그램 항목 ID
 
     @Column(columnDefinition = "TEXT", nullable = false)
     private String note;  // 자유 메모 내용

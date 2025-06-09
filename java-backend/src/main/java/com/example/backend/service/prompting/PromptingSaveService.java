@@ -127,12 +127,12 @@ public class PromptingSaveService {
 
                 log.info("promptingStepEntity : {}", stepEntity);
 
-                Long itemId = promptingStepRepository.save(stepEntity).getStepId();
-
+                Long stepId = promptingStepRepository.saveAndFlush(stepEntity).getStepId();
+                log.info("itemId : {}", stepId);
                 if (!CommonUtils.isNullOrBlank(item.get("note"))) {
                     PromptingNote noteEntity = PromptingNote.builder()
                             .hierarchyId(hierarchyId)
-                            .itemId(itemId)
+                            .stepId(stepId)
                             .note(item.get("note").toString())
                             .build();
 
